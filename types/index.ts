@@ -1,4 +1,15 @@
-import type { ComponentPropsWithoutRef, ElementType } from "react";
+import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
+
+export type NavLink = {
+  label: string;
+  href: string;
+  sectionId: string;
+};
+
+export type BrandProps = {
+  logo?: ReactNode;
+  className?: string;
+};
 
 export type ContainerElement = "div" | "section" | "article" | "main";
 

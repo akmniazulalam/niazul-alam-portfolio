@@ -1,1 +1,3 @@
-// Export custom hooks from this module as they are added.
+export { useActiveSection } from "./useActiveSection";
+export { useMobileMenu } from "./useMobileMenu";
+export { useScrollPosition } from "./useScrollPosition";
