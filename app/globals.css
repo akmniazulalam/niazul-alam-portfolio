@@ -1,33 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ---------------------------------------------------------------------------
+ * Design tokens
+ * --------------------------------------------------------------------------- */
 
 @theme inline {
-  --color-background: #09090B;
+  /* Colors */
+  --color-background: #09090b;
   --color-primary: #5e5eee;
   --color-secondary: #7858c9;
   --color-accent: #36b7cc;
   --color-text: #ffffff;
   --color-muted: #a1a1aa;
 
-
+  /* Typography */
   --font-rajdhani: var(--font-rajdhani);
   --font-rubik: var(--font-rubik);
   --font-poppins: var(--font-poppins);
   --font-newRocker: var(--font-newRocker);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ---------------------------------------------------------------------------
+ * Base styles
+ * --------------------------------------------------------------------------- */
 
-body {
-  
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }
