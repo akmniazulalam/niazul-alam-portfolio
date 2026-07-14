@@ -29,8 +29,7 @@ export function NavLinkItem({
           isActive ? "text-primary" : "text-muted hover:text-inherit",
           className,
         )}
-        aria-current={isActive ? "true" : undefined}
-      >
+        aria-current={isActive ? "true" : undefined}>
         {link.label}
         <span
           aria-hidden="true"
