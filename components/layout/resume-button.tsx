@@ -14,8 +14,7 @@ export function ResumeButton({ className }: ResumeButtonProps) {
       href={RESUME_PATH}
       className={cn(resumeButtonStyles, className)}
       download
-      aria-label="Download resume (PDF)"
-    >
+      aria-label="Download resume (PDF)">
       Resume
     </a>
   );
