@@ -53,7 +53,7 @@ export function HeroProfileCard({
 
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#1c0d28]/80 to-transparent"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-[#1c0d28]/80 to-transparent"
         />
       </div>
     </div>
