@@ -1,10 +1,10 @@
 export const NAV_LINKS = [
-  { label: "Home", href: "/#home", sectionId: "home" },
-  { label: "About", href: "/#about", sectionId: "about" },
-  { label: "Skills", href: "/#skills", sectionId: "skills" },
-  { label: "Experience", href: "/#experience", sectionId: "experience" },
-  { label: "Projects", href: "/#projects", sectionId: "projects" },
-  { label: "Contact", href: "/#contact", sectionId: "contact" },
+  { label: "Home", href: "/home", sectionId: "home" },
+  { label: "About", href: "/about", sectionId: "about" },
+  { label: "Skills", href: "/skills", sectionId: "skills" },
+  { label: "Experience", href: "/experience", sectionId: "experience" },
+  { label: "Projects", href: "/projects", sectionId: "projects" },
+  { label: "Contact", href: "/contact", sectionId: "contact" },
 ] as const;
 
 export const SECTION_IDS = [
