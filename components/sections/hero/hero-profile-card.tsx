@@ -28,7 +28,7 @@ export function HeroProfileCard({
       />
 
       <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
-        <div className="relative aspect-[4/5] w-full">
+        <div className="relative aspect-4/5 w-full">
           {imageSrc ? (
             <Image
               src={imageSrc}
