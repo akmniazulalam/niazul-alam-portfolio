@@ -39,7 +39,7 @@ export function HeroProfileCard({
               className="object-cover"
             />
           ) : (
-            <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-linear-to-br from-white/5 to-white/[0.02] p-8">
+            <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-linear-to-br from-white/5 to-white/2 p-8">
               <span
                 aria-hidden="true"
                 className="font-newRocker text-5xl text-white/15 sm:text-6xl lg:text-7xl"
