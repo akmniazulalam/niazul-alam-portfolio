@@ -163,9 +163,9 @@ export const ABOUT_DATA = {
     title: "Hobbies",
     items: [
       {
-        title: "Music",
+        title: "Listening to Music",
         description:
-          "Listening to music is one of my favorite ways to relax and recharge outside of coding.",
+          "Music helps me relax, recharge, and stay creatively refreshed outside of coding.",
       },
       {
         title: "Singing",
@@ -182,7 +182,9 @@ export const ABOUT_DATA = {
   resumeCta: {
     title: "Resume",
     description:
-      "Want a quick overview of my background, skills, and experience? Download my resume for a concise summary.",
+      "Download my resume for a concise overview of my skills, experience, and technical background.",
     buttonLabel: "Download Resume",
+    secondaryButtonLabel: "Contact Me",
+    secondaryButtonHref: "#contact",
   },
 } as const;
