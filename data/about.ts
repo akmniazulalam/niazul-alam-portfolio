@@ -128,24 +128,24 @@ export const ABOUT_DATA = {
           "I stay calm with complex problems and give myself the time needed to understand issues properly before moving forward.",
       },
       {
-        title: "Consistency",
+        title: "Problem Solving",
         description:
-          "I believe steady, regular effort leads to real progress. I show up, practice often, and keep improving through routine work.",
-      },
-      {
-        title: "Dedication",
-        description:
-          "When I commit to learning or building something, I follow through with focus and discipline until the work is done well.",
-      },
-      {
-        title: "Attention to Detail",
-        description:
-          "I care about clean UI, organized code, and the small details that make an application feel more polished and professional.",
+          "I break challenges into clear steps, compare options, and keep moving toward practical solutions.",
       },
       {
         title: "Continuous Learning",
         description:
-          "I actively keep learning through projects, research, and new tools because web development is always evolving.",
+          "I keep improving through projects, research, documentation, and consistent practice.",
+      },
+      {
+        title: "Attention to Detail",
+        description:
+          "I care about clean UI, organized code, and the small details that make applications feel polished.",
+      },
+      {
+        title: "Dedication",
+        description:
+          "When I commit to learning or building something, I follow through with focus and discipline.",
       },
     ] satisfies AboutPlaceholderItem[],
   },
@@ -153,14 +153,9 @@ export const ABOUT_DATA = {
     title: "Future Goals",
     items: [
       {
-        title: "Build Impactful Products",
+        title: "Build Meaningful Digital Products",
         description:
-          "I want to create digital products that solve real problems and deliver genuine value to users, not just features for the sake of features.",
-      },
-      {
-        title: "Grow as a Developer & Builder",
-        description:
-          "Alongside strengthening my MERN stack skills, I aim to develop an entrepreneurial mindset — learning how to plan, build, and ship products that can make a meaningful impact.",
+          "My long-term goal is to grow as a MERN developer and builder, creating reliable products that solve real problems and deliver lasting value.",
       },
     ] satisfies AboutPlaceholderItem[],
   },
