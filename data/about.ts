@@ -14,7 +14,7 @@ export type AboutEducationItem = {
   degree: string;
   institution: string;
   period: string;
-  description: string;
+  description?: string;
 };
 
 export type AboutProcessStep = {
@@ -50,28 +50,22 @@ export const ABOUT_DATA = {
     ] satisfies AboutExperienceItem[],
   },
   education: {
-    title: "Learning Journey",
+    title: "Education Timeline",
     items: [
       {
-        degree: "Self-Learning",
-        institution: "YouTube & Online Resources",
-        period: "Ongoing",
-        description:
-          "Began learning web development independently through online tutorials, documentation, and hands-on experimentation. Built a strong foundation in HTML, CSS, JavaScript, and modern frontend concepts before moving deeper into full-stack development.",
+        degree: "B.Sc. Engineering in CSE",
+        institution: "The Institution of Engineers, Bangladesh",
+        period: "2025 – Present",
       },
       {
-        degree: "Professional Web Development Training",
-        institution: "Creative IT Institute",
-        period: "Completed",
-        description:
-          "Completed structured training to strengthen core web development skills, improve best practices, and gain guided experience through instructor-led learning and practical exercises.",
+        degree: "Diploma in Computer Science & Engineering",
+        institution: "Munshiganj Polytechnic Institute",
+        period: "2020 – 2024",
       },
       {
-        degree: "Project-Based Learning",
-        institution: "Personal & Portfolio Projects",
-        period: "Ongoing",
-        description:
-          "Continue learning by building real projects, applying new tools and concepts in practice, and refining my approach through consistent development and problem-solving.",
+        degree: "SSC",
+        institution: "City Corporation Adarsha High School",
+        period: "2020",
       },
     ] satisfies AboutEducationItem[],
   },

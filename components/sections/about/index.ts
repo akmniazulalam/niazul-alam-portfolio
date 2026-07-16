@@ -1,6 +1,7 @@
 export { About } from "./about";
 export { AboutBlock } from "./about-block";
 export { AboutEducationTimeline } from "./about-education-timeline";
+export { EducationTimeline } from "./education-timeline";
 export { AboutExperienceCard } from "./about-experience-card";
 export { AboutFutureGoals } from "./about-future-goals";
 export { AboutHeader } from "./about-header";
