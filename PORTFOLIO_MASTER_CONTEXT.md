@@ -457,13 +457,13 @@ Completed:
 - Education Timeline
 - Experience Card
 - Working Process
-
-Pending:
-
 - Strengths
 - Future Goals
 - Hobbies
 - Resume CTA
+
+Pending:
+
 - About Final Polish
 - Skills
 - Experience
