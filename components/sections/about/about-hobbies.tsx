@@ -12,7 +12,7 @@ export function AboutHobbies() {
         {hobbies.items.map((item) => (
           <li
             key={item.title}
-            className="min-w-[10rem] flex-1 rounded-xl border border-white/10 bg-white/[0.02] p-4"
+            className="min-w-40 flex-1 rounded-xl border border-white/10 bg-white/2 p-4"
           >
             <h4 className="mb-2 font-rajdhani text-base font-bold text-text">
               {item.title}

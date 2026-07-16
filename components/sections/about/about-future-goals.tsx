@@ -12,7 +12,7 @@ export function AboutFutureGoals() {
         {futureGoals.items.map((item) => (
           <li
             key={item.title}
-            className="rounded-xl border border-white/10 bg-white/[0.02] p-4 sm:p-5"
+            className="rounded-xl border border-white/10 bg-white/2 p-4 sm:p-5"
           >
             <h4 className="mb-2 font-rajdhani text-base font-bold text-text sm:text-lg">
               {item.title}

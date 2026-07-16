@@ -12,7 +12,7 @@ export function AboutWorkingProcess() {
         {workingProcess.steps.map((step, index) => (
           <li
             key={step.title}
-            className="flex gap-4 rounded-xl border border-white/10 bg-white/[0.02] p-4 sm:p-5"
+            className="flex gap-4 rounded-xl border border-white/10 bg-white/2 p-4 sm:p-5"
           >
             <span
               aria-hidden="true"
