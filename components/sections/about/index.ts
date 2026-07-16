@@ -1,0 +1,13 @@
+export { About } from "./about";
+export { AboutBlock } from "./about-block";
+export { AboutEducationTimeline } from "./about-education-timeline";
+export { AboutExperienceCard } from "./about-experience-card";
+export { AboutFutureGoals } from "./about-future-goals";
+export { AboutHeader } from "./about-header";
+export { AboutText } from "./about-text";
+export { AboutHobbies } from "./about-hobbies";
+export { AboutIntroduction } from "./about-introduction";
+export { AboutResumeCta } from "./about-resume-cta";
+export { AboutStrengths } from "./about-strengths";
+export { AboutWhyWebDev } from "./about-why-web-dev";
+export { AboutWorkingProcess } from "./about-working-process";

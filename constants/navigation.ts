@@ -13,7 +13,7 @@ export const SECTION_IDS = [
 
 export const DEFAULT_SECTION_ID = SECTION_IDS[0];
 
-/** Placeholder path — add resume.pdf to /public when available. */
-export const RESUME_PATH = "/resume.pdf";
+/** Placeholder path — add A.K.M. Niazul Alam.pdf to /public when available. */
+export const RESUME_PATH = "/A.K.M. Niazul Alam.pdf";
 
 export const NAV_SCROLL_THRESHOLD = 10;
