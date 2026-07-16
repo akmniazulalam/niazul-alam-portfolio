@@ -12,7 +12,7 @@ export function AboutExperienceCard() {
         {experience.items.map((item) => (
           <li
             key={`${item.role}-${item.company}`}
-            className="rounded-xl border border-white/10 bg-white/[0.02] p-4 sm:p-5"
+            className="rounded-xl border border-white/10 bg-white/2 p-4 sm:p-5"
           >
             <div className="mb-2 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
               <h4 className="font-rajdhani text-lg font-bold text-text">
