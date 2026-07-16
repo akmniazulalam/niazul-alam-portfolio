@@ -19,7 +19,7 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
       <div
         aria-hidden="true"
         className={cn(
-          "absolute left-[0.9375rem] z-10 size-3.5 -translate-x-1/2 rounded-full border-2 border-[#8852F7] bg-[#0a0909] transition-colors duration-300",
+          "absolute left-[0.9375rem] top-6 z-10 size-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0a0909] transition-colors duration-300",
           "group-hover:border-[#ef9d7a]",
         )}
       />
@@ -27,7 +27,7 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
       {!isLast && (
         <div
           aria-hidden="true"
-          className="absolute left-[0.9375rem] top-3.5 bottom-0 w-px -translate-x-1/2 bg-white/10"
+          className="absolute left-[0.9375rem] top-6 bottom-0 w-px -translate-x-1/2 bg-white/10"
         />
       )}
 
@@ -37,11 +37,11 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
           "hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-lg hover:shadow-[#8852F7]/5",
         )}
       >
-        <div className="mb-2 flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+        <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
           <h4 className="font-rajdhani text-lg font-bold text-text sm:text-xl">
             {item.degree}
           </h4>
-          <time className="shrink-0 font-poppins text-xs font-medium text-[#ef9d7a] sm:text-sm">
+          <time className="inline-flex shrink-0 self-start items-center rounded-full bg-[#ef9d7a]/10 border border-[#ef9d7a]/25 px-2.5 py-0.5 font-poppins text-xs font-semibold text-[#ef9d7a] sm:px-3 sm:py-0.5">
             {item.period}
           </time>
         </div>

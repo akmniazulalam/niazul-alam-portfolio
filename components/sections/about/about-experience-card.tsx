@@ -7,7 +7,11 @@ export function AboutExperienceCard() {
   const { experience } = ABOUT_DATA;
 
   return (
-    <AboutBlock title={experience.title} headingId="about-experience-heading">
+    <AboutBlock
+      title={experience.title}
+      headingId="about-experience-heading"
+      variant="ghost"
+    >
       <ul className="space-y-6">
         {experience.items.map((item) => (
           <li key={`${item.role}-${item.company}-${item.period}`}>

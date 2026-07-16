@@ -50,7 +50,7 @@ export function WorkingProcess({ steps, className }: WorkingProcessProps) {
   return (
     <ol className={cn("grid gap-4 sm:grid-cols-2", className)}>
       {steps.map((step, index) => (
-        <li key={step.title}>
+        <li key={step.title} className="h-full">
           <WorkingProcessCard step={step} index={index} />
         </li>
       ))}

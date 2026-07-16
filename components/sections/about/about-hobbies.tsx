@@ -7,7 +7,11 @@ export function AboutHobbies() {
   const { hobbies } = ABOUT_DATA;
 
   return (
-    <AboutBlock title={hobbies.title} headingId="about-hobbies-heading">
+    <AboutBlock
+      title={hobbies.title}
+      headingId="about-hobbies-heading"
+      variant="ghost"
+    >
       <Hobbies items={hobbies.items} />
     </AboutBlock>
   );

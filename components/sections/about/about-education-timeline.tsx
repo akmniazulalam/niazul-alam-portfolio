@@ -14,6 +14,7 @@ export function AboutEducationTimeline({ className }: AboutEducationTimelineProp
     <AboutBlock
       title={education.title}
       headingId="about-education-heading"
+      variant="ghost"
       className={className}
     >
       <EducationTimeline items={education.items} />

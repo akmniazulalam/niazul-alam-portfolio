@@ -7,7 +7,11 @@ export function AboutWorkingProcess() {
   const { workingProcess } = ABOUT_DATA;
 
   return (
-    <AboutBlock title={workingProcess.title} headingId="about-process-heading">
+    <AboutBlock
+      title={workingProcess.title}
+      headingId="about-process-heading"
+      variant="ghost"
+    >
       <WorkingProcess steps={workingProcess.steps} />
     </AboutBlock>
   );

@@ -30,16 +30,19 @@ export function About() {
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
             <AboutWhyWebDev />
-            <AboutWorkingProcess />
-          </div>
-
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-10">
-            <AboutStrengths />
             <AboutFutureGoals />
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-10">
+            <AboutWorkingProcess />
+            <AboutStrengths />
+          </div>
+
+          <div className="w-full">
             <AboutHobbies />
+          </div>
+
+          <div className="w-full">
             <AboutResumeCta />
           </div>
         </div>

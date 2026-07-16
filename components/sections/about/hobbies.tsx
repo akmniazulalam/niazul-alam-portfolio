@@ -10,7 +10,7 @@ type HobbiesProps = {
 
 export function Hobbies({ items, className }: HobbiesProps) {
   return (
-    <ul className={cn("grid gap-4 sm:grid-cols-2", className)}>
+    <ul className={cn("grid gap-4 sm:grid-cols-2 lg:grid-cols-3", className)}>
       {items.map((item) => (
         <li key={item.title} className="h-full">
           <AboutFeatureCard item={item} />
