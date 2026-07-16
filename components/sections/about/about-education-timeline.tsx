@@ -13,7 +13,7 @@ export function AboutEducationTimeline() {
           <li key={`${item.degree}-${item.institution}`} className="relative">
             <span
               aria-hidden="true"
-              className="absolute -left-[1.8125rem] top-1.5 size-3 rounded-full border-2 border-[#8852F7] bg-[#0a0909]"
+              className="absolute -left-7.25 top-1.5 size-3 rounded-full border-2 border-[#8852F7] bg-[#0a0909]"
             />
             <div className="space-y-2">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
