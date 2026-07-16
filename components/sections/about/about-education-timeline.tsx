@@ -1,5 +1,4 @@
 import { ABOUT_DATA } from "@/data/about";
-import { cn } from "@/utils/cn";
 
 import { AboutBlock } from "./about-block";
 import { EducationTimeline } from "./education-timeline";
@@ -15,7 +14,7 @@ export function AboutEducationTimeline({ className }: AboutEducationTimelineProp
     <AboutBlock
       title={education.title}
       headingId="about-education-heading"
-      className={cn("lg:col-span-2", className)}
+      className={className}
     >
       <EducationTimeline items={education.items} />
     </AboutBlock>

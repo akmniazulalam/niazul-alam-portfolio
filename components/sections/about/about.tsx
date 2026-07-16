@@ -18,12 +18,12 @@ export function About() {
       aria-labelledby="about-heading"
       className="bg-[#0a0909]">
       <Container className="py-16 sm:py-20 lg:py-24">
-        <div className="flex flex-col gap-10 sm:gap-12 lg:gap-16">
+        <div className="flex flex-col gap-10 sm:gap-12 lg:gap-14">
           <AboutHeader />
 
           <AboutIntroduction />
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-10">
             <AboutExperienceCard />
             <AboutEducationTimeline />
           </div>
@@ -33,7 +33,7 @@ export function About() {
             <AboutWorkingProcess />
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-10">
             <AboutStrengths />
             <AboutFutureGoals />
           </div>

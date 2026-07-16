@@ -8,7 +8,11 @@ export function AboutResumeCta() {
   const { resumeCta } = ABOUT_DATA;
 
   return (
-    <AboutBlock title={resumeCta.title} headingId="about-resume-heading">
+    <AboutBlock
+      title={resumeCta.title}
+      headingId="about-resume-heading"
+      className="h-full"
+    >
       <ResumeCTA
         description={resumeCta.description}
         buttonLabel={resumeCta.buttonLabel}

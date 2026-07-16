@@ -7,11 +7,15 @@ export function AboutFutureGoals() {
   const { futureGoals } = ABOUT_DATA;
 
   return (
-    <AboutBlock title={futureGoals.title} headingId="about-goals-heading">
+    <AboutBlock
+      title={futureGoals.title}
+      headingId="about-goals-heading"
+      className="lg:self-start"
+    >
       <ul className="space-y-4">
         {futureGoals.items.map((item) => (
           <li key={item.title}>
-            <AboutFeatureCard item={item} variant="highlight" />
+            <AboutFeatureCard item={item} variant="highlight" className="sm:p-6" />
           </li>
         ))}
       </ul>

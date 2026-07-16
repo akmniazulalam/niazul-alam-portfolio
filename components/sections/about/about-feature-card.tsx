@@ -55,7 +55,7 @@ export function AboutFeatureCard({
       tabIndex={0}
       aria-labelledby={headingId}
       className={cn(
-        "group h-full rounded-xl border p-4 transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] sm:p-5",
+        "group h-full rounded-xl border p-4 transition-all duration-300 hover:-translate-y-0.5 focus-visible:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] sm:p-5",
         cardStyles[variant],
         className,
       )}

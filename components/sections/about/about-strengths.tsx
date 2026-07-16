@@ -10,7 +10,7 @@ export function AboutStrengths() {
     <AboutBlock title={strengths.title} headingId="about-strengths-heading">
       <ul className="grid gap-4 sm:grid-cols-2">
         {strengths.items.map((item, index) => (
-          <li key={item.title}>
+          <li key={item.title} className="h-full">
             <AboutFeatureCard item={item} index={index} />
           </li>
         ))}

@@ -25,11 +25,11 @@ export function ResumeCTA({
   return (
     <div
       className={cn(
-        "flex h-full flex-col justify-between gap-6 rounded-xl border border-[#FF014F]/20 bg-[#FF014F]/5 p-4 sm:p-5",
+        "flex h-full flex-col justify-between gap-6 border-l-2 border-[#FF014F]/50 pl-4 sm:gap-7 sm:pl-5",
         className,
       )}
     >
-      <AboutText>{description}</AboutText>
+      <AboutText className="max-w-xl text-text/80">{description}</AboutText>
 
       <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <a
