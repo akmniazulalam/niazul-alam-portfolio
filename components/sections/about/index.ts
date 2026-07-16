@@ -13,3 +13,4 @@ export { AboutResumeCta } from "./about-resume-cta";
 export { AboutStrengths } from "./about-strengths";
 export { AboutWhyWebDev } from "./about-why-web-dev";
 export { AboutWorkingProcess } from "./about-working-process";
+export { WorkingProcess } from "./working-process";

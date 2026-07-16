@@ -98,19 +98,24 @@ export const ABOUT_DATA = {
     title: "Working Process",
     steps: [
       {
-        title: "Understand the Problem First",
+        title: "Think",
         description:
-          "I start by breaking down the task, understanding the goal, and identifying what the user or project actually needs before writing code.",
+          "I start by understanding the goal, user needs, and project context before choosing a direction.",
       },
       {
-        title: "Research & Think Independently",
+        title: "Research",
         description:
-          "I explore documentation, study similar solutions, and work through problems step by step. I try to understand the why behind an approach, not just the implementation.",
+          "I review documentation, explore proven patterns, and compare options before implementation.",
       },
       {
-        title: "Build with Responsibility",
+        title: "Build",
         description:
-          "I use AI tools as a support resource for learning, debugging, and productivity — not as a replacement for understanding. My goal is always to write code I can explain, maintain, and improve.",
+          "I create clean, responsive interfaces with maintainable code and careful attention to detail.",
+      },
+      {
+        title: "Improve",
+        description:
+          "I test, refine, and polish the result so it feels reliable, accessible, and ready to use.",
       },
     ] satisfies AboutProcessStep[],
   },
