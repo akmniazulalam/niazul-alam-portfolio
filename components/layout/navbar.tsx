@@ -33,10 +33,10 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-[background-color,color,box-shadow,border-color] duration-300 ease-in-out",
+        "sticky top-0 z-50 w-full shadow-[0_0_30px_rgba(135,80,247,.2)] transition-[background-color,color,box-shadow,border-color] duration-300 ease-in-out",
         isScrolled
-          ? "border-b border-white/10 bg-background/95 text-text shadow-sm backdrop-blur-md"
-          : "border-b border-transparent bg-transparent text-background",
+          ? "border-b border-white/10 bg-background/95 text-text backdrop-blur-md"
+          : "border-b border-transparent bg-background/95 text-text",
       )}>
       <Container
         as="div"
