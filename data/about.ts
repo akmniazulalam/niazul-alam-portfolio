@@ -7,7 +7,11 @@ export type AboutExperienceItem = {
   role: string;
   company: string;
   period: string;
-  description: string;
+  team: string;
+  employmentType?: string;
+  responsibilities: readonly string[];
+  technologies: readonly string[];
+  logoSrc?: string;
 };
 
 export type AboutEducationItem = {
@@ -42,10 +46,23 @@ export const ABOUT_DATA = {
     items: [
       {
         role: "Frontend Developer",
-        company: "Softvence Agency · CMS & Shopify Team",
+        company: "Softvence Agency",
+        team: "CMS & Shopify Team",
         period: "September 2025 – December 2025",
-        description:
-          "Developed and maintained frontend interfaces for CMS and Shopify-based client projects. Worked with the team to implement responsive layouts and translate requirements into clean, functional UI. Supported updates, refinements, and day-to-day improvements across assigned project workflows.",
+        employmentType: "Internship",
+        responsibilities: [
+          "Developed and maintained frontend interfaces for CMS and Shopify-based client projects.",
+          "Implemented responsive layouts and translated requirements into clean, functional UI.",
+          "Collaborated with the team on updates, refinements, and day-to-day project workflows.",
+          "Supported consistent delivery across assigned client project workflows.",
+        ],
+        technologies: [
+          "CMS",
+          "Shopify",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+        ],
       },
     ] satisfies AboutExperienceItem[],
   },

@@ -3,6 +3,7 @@ export { AboutBlock } from "./about-block";
 export { AboutEducationTimeline } from "./about-education-timeline";
 export { EducationTimeline } from "./education-timeline";
 export { AboutExperienceCard } from "./about-experience-card";
+export { ExperienceCard } from "./experience-card";
 export { AboutFutureGoals } from "./about-future-goals";
 export { AboutHeader } from "./about-header";
 export { AboutText } from "./about-text";
