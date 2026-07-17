@@ -1,11 +1,11 @@
-import { FadeUp } from "@/components/ui";
+import { FadeLeft } from "@/components/ui";
 import { SKILLS_DATA } from "@/data/skills";
 
 export function SkillsPhilosophy() {
   const { philosophy } = SKILLS_DATA;
 
   return (
-    <FadeUp className="h-full">
+    <FadeLeft className="h-full">
       <article
         aria-labelledby="skills-philosophy-heading"
         className="rounded-2xl border border-[#8852F7]/25 bg-gradient-to-br from-[#8852F7]/8 to-transparent p-6 sm:p-8 h-full flex flex-col transition-all duration-300 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
@@ -40,6 +40,6 @@ export function SkillsPhilosophy() {
           </p>
         </blockquote>
       </article>
-    </FadeUp>
+    </FadeLeft>
   );
 }

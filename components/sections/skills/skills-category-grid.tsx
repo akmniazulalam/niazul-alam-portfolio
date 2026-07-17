@@ -1,6 +1,7 @@
 import type { SkillCategory } from "@/data/skills";
 import { cn } from "@/utils/cn";
 import { SkillsIcon } from "./skills-icon";
+import { StaggerContainer, StaggerItem } from "@/components/ui";
 
 type SkillsCategoryGridProps = {
   category: SkillCategory;
@@ -26,25 +27,29 @@ export function SkillsCategoryGrid({
         {category.title}
       </h3>
 
-      <ul
-        className="flex flex-wrap gap-2"
-        aria-labelledby={`skills-${category.id}-heading`}
-      >
-        {category.items.map((item) => (
-          <li key={item.name}>
-            <span
-              tabIndex={0}
-              className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-3.5 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] group/tag"
-            >
-              <SkillsIcon
-                name={item.name}
-                className="size-3.5 shrink-0 text-text/60 transition-all duration-300 group-hover/tag:scale-110 group-hover/tag:text-[#8852F7] group-focus-visible/tag:text-[#8852F7]"
-              />
-              <span>{item.name}</span>
-            </span>
-          </li>
-        ))}
-      </ul>
+      <StaggerContainer staggerDelay={0.03} amount="some">
+        <ul
+          className="flex flex-wrap gap-2"
+          aria-labelledby={`skills-${category.id}-heading`}
+        >
+          {category.items.map((item) => (
+            <li key={item.name}>
+              <StaggerItem>
+                <span
+                  tabIndex={0}
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-3.5 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] group/tag"
+                >
+                  <SkillsIcon
+                    name={item.name}
+                    className="size-3.5 shrink-0 text-text/60 transition-all duration-300 group-hover/tag:scale-110 group-hover/tag:text-[#8852F7] group-focus-visible/tag:text-[#8852F7]"
+                  />
+                  <span>{item.name}</span>
+                </span>
+              </StaggerItem>
+            </li>
+          ))}
+        </ul>
+      </StaggerContainer>
     </article>
   );
 }

@@ -1,4 +1,4 @@
-import { Container, FadeLeft, FadeRight, StaggerContainer, StaggerItem } from "@/components/ui";
+import { Container, StaggerContainer, StaggerItem } from "@/components/ui";
 import { SKILLS_DATA } from "@/data/skills";
 
 import { SkillsCategoryGrid } from "./skills-category-grid";
@@ -27,19 +27,19 @@ export function Skills() {
           <SkillsHeader />
 
           {/* ── Skill Categories ───────────────────────────────────────── */}
-          <div className="flex flex-col gap-5" aria-label="Skill categories">
-            {/* Row 1: Frontend (left) + Styling (right) */}
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <FadeLeft className="lg:col-span-2 h-full">
-                <SkillsCategoryGrid category={frontend} className="h-full" />
-              </FadeLeft>
-              <FadeRight className="h-full">
-                <SkillsCategoryGrid category={styling} className="h-full" />
-              </FadeRight>
-            </div>
+          <StaggerContainer>
+            <div className="flex flex-col gap-5" aria-label="Skill categories">
+              {/* Row 1: Frontend (left) + Styling (right) */}
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <StaggerItem className="lg:col-span-2 h-full">
+                  <SkillsCategoryGrid category={frontend} className="h-full" />
+                </StaggerItem>
+                <StaggerItem className="h-full">
+                  <SkillsCategoryGrid category={styling} className="h-full" />
+                </StaggerItem>
+              </div>
 
-            {/* Row 2: State Management + Backend + Database */}
-            <StaggerContainer>
+              {/* Row 2: State Management + Backend + Database */}
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 <StaggerItem className="h-full">
                   <SkillsCategoryGrid category={stateManagement} className="h-full" />
@@ -51,20 +51,18 @@ export function Skills() {
                   <SkillsCategoryGrid category={database} className="h-full" />
                 </StaggerItem>
               </div>
-            </StaggerContainer>
 
-            {/* Row 3: Tools (left) + Other (right) */}
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <FadeLeft className="lg:col-span-2 h-full">
-                <SkillsCategoryGrid category={tools} className="h-full" />
-              </FadeLeft>
-              <FadeRight className="h-full">
-                <SkillsCategoryGrid category={other} className="h-full" />
-              </FadeRight>
-            </div>
+              {/* Row 3: Tools (left) + Other (right) */}
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <StaggerItem className="lg:col-span-2 h-full">
+                  <SkillsCategoryGrid category={tools} className="h-full" />
+                </StaggerItem>
+                <StaggerItem className="h-full">
+                  <SkillsCategoryGrid category={other} className="h-full" />
+                </StaggerItem>
+              </div>
 
-            {/* Row 4: Auth + Deployment */}
-            <StaggerContainer>
+              {/* Row 4: Auth + Deployment */}
               <div className="grid gap-5 sm:grid-cols-2">
                 <StaggerItem className="h-full">
                   <SkillsCategoryGrid category={authentication} className="h-full" />
@@ -73,8 +71,8 @@ export function Skills() {
                   <SkillsCategoryGrid category={deployment} className="h-full" />
                 </StaggerItem>
               </div>
-            </StaggerContainer>
-          </div>
+            </div>
+          </StaggerContainer>
 
           {/* ── Philosophy + Working Style ──────────────────────────────── */}
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">

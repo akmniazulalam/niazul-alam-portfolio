@@ -1,12 +1,12 @@
 import { SKILLS_DATA } from "@/data/skills";
-import { FadeUp } from "@/components/ui";
+import { ScaleIn } from "@/components/ui";
 import { SkillsIcon } from "./skills-icon";
 
 export function SkillsFavoriteStack() {
   const { favoriteStack } = SKILLS_DATA;
 
   return (
-    <FadeUp>
+    <ScaleIn>
       <article
         aria-labelledby="skills-stack-heading"
         className="rounded-2xl border border-[#ef9d7a]/20 bg-gradient-to-r from-[#ef9d7a]/5 to-transparent p-5 sm:p-6 transition-all duration-300 hover:border-[#ef9d7a]/35 hover:shadow-[0_0_30px_rgba(239,157,122,0.15)]"
@@ -53,6 +53,6 @@ export function SkillsFavoriteStack() {
           </ul>
         </div>
       </article>
-    </FadeUp>
+    </ScaleIn>
   );
 }
