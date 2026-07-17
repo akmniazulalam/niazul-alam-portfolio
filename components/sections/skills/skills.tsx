@@ -27,46 +27,50 @@ export function Skills() {
           <SkillsHeader />
 
           {/* ── Skill Categories ───────────────────────────────────────── */}
-          <div aria-label="Skill categories">
+          <div className="flex flex-col gap-5" aria-label="Skill categories">
             {/* Row 1: Frontend (left) + Styling (right) */}
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 mb-5">
-              <FadeLeft className="lg:col-span-2">
-                <SkillsCategoryGrid category={frontend} />
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <FadeLeft className="lg:col-span-2 h-full">
+                <SkillsCategoryGrid category={frontend} className="h-full" />
               </FadeLeft>
-              <FadeRight>
-                <SkillsCategoryGrid category={styling} />
+              <FadeRight className="h-full">
+                <SkillsCategoryGrid category={styling} className="h-full" />
               </FadeRight>
             </div>
 
             {/* Row 2: State Management + Backend + Database */}
             <StaggerContainer>
-              <div className="grid gap-5 sm:grid-cols-3 mb-5">
-                <StaggerItem>
-                  <SkillsCategoryGrid category={stateManagement} />
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <StaggerItem className="h-full">
+                  <SkillsCategoryGrid category={stateManagement} className="h-full" />
                 </StaggerItem>
-                <StaggerItem>
-                  <SkillsCategoryGrid category={backend} />
+                <StaggerItem className="h-full">
+                  <SkillsCategoryGrid category={backend} className="h-full" />
                 </StaggerItem>
-                <StaggerItem>
-                  <SkillsCategoryGrid category={database} />
+                <StaggerItem className="sm:col-span-2 lg:col-span-1 h-full">
+                  <SkillsCategoryGrid category={database} className="h-full" />
                 </StaggerItem>
               </div>
             </StaggerContainer>
 
-            {/* Row 3: Auth + Deployment + Tools + Other */}
+            {/* Row 3: Tools (left) + Other (right) */}
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <FadeLeft className="lg:col-span-2 h-full">
+                <SkillsCategoryGrid category={tools} className="h-full" />
+              </FadeLeft>
+              <FadeRight className="h-full">
+                <SkillsCategoryGrid category={other} className="h-full" />
+              </FadeRight>
+            </div>
+
+            {/* Row 4: Auth + Deployment */}
             <StaggerContainer>
-              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                <StaggerItem>
-                  <SkillsCategoryGrid category={authentication} />
+              <div className="grid gap-5 sm:grid-cols-2">
+                <StaggerItem className="h-full">
+                  <SkillsCategoryGrid category={authentication} className="h-full" />
                 </StaggerItem>
-                <StaggerItem>
-                  <SkillsCategoryGrid category={deployment} />
-                </StaggerItem>
-                <StaggerItem>
-                  <SkillsCategoryGrid category={tools} />
-                </StaggerItem>
-                <StaggerItem>
-                  <SkillsCategoryGrid category={other} />
+                <StaggerItem className="h-full">
+                  <SkillsCategoryGrid category={deployment} className="h-full" />
                 </StaggerItem>
               </div>
             </StaggerContainer>

@@ -14,7 +14,7 @@ export function SkillsCategoryGrid({
     <article
       className={cn(
         "rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 transition-all duration-300",
-        "hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
+        "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
         className,
       )}
     >
@@ -31,7 +31,7 @@ export function SkillsCategoryGrid({
       >
         {category.items.map((item) => (
           <li key={item.name}>
-            <span className="inline-block rounded-full border border-[#8852F7]/30 bg-[#8852F7]/10 px-3 py-1 font-poppins text-xs font-medium text-text/90 transition-colors duration-300 hover:border-[#8852F7]/60 hover:bg-[#8852F7]/20 sm:text-sm">
+            <span className="inline-flex items-center rounded-xl border border-white/10 bg-white/[0.02] px-3.5 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text sm:text-sm">
               {item.name}
             </span>
           </li>
