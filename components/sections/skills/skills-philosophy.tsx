@@ -8,7 +8,7 @@ export function SkillsPhilosophy() {
     <FadeLeft className="h-full">
       <article
         aria-labelledby="skills-philosophy-heading"
-        className="rounded-2xl border border-[#8852F7]/25 bg-gradient-to-br from-[#8852F7]/8 to-transparent p-6 sm:p-8 h-full flex flex-col transition-all duration-300 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
+        className="rounded-2xl border border-[#8852F7]/25 bg-gradient-to-br from-[#8852F7]/8 to-transparent p-5 sm:p-6 lg:p-8 h-full flex flex-col transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
       >
         <div className="mb-5 flex items-center gap-3">
           <span

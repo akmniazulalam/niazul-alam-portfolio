@@ -9,7 +9,7 @@ export function SkillsFavoriteStack() {
     <ScaleIn>
       <article
         aria-labelledby="skills-stack-heading"
-        className="rounded-2xl border border-[#ef9d7a]/20 bg-gradient-to-r from-[#ef9d7a]/5 to-transparent p-5 sm:p-6 transition-all duration-300 hover:border-[#ef9d7a]/35 hover:shadow-[0_0_30px_rgba(239,157,122,0.15)]"
+        className="rounded-2xl border border-[#ef9d7a]/20 bg-gradient-to-r from-[#ef9d7a]/5 to-transparent p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#ef9d7a]/35 hover:shadow-[0_0_30px_rgba(239,157,122,0.15)]"
       >
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
           <div className="flex shrink-0 items-center gap-3">
@@ -35,11 +35,11 @@ export function SkillsFavoriteStack() {
               <li key={item.name} className="flex items-center gap-2 sm:gap-2.5">
                 <span
                   tabIndex={0}
-                  className="group/badge inline-flex items-center gap-1.5 rounded-full border border-[#ef9d7a]/35 bg-[#ef9d7a]/10 px-3 py-1 font-poppins text-xs font-semibold text-[#ef9d7a] transition-all duration-300 hover:scale-105 hover:bg-[#ef9d7a]/20 hover:shadow-[0_0_15px_rgba(239,157,122,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ef9d7a] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] sm:px-4 sm:py-1.5 sm:text-sm"
+                  className="group inline-flex items-center gap-1.5 rounded-full border border-[#ef9d7a]/35 bg-[#ef9d7a]/10 px-3 py-1 font-poppins text-xs font-semibold text-[#ef9d7a] transition-all duration-300 hover:scale-105 hover:bg-[#ef9d7a]/20 hover:shadow-[0_0_15px_rgba(239,157,122,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ef9d7a] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] sm:px-4 sm:py-1.5 sm:text-sm"
                 >
                   <SkillsIcon
                     name={item.name}
-                    className="size-3.5 shrink-0 transition-transform duration-300 group-hover/badge:scale-110"
+                    className="size-3.5 shrink-0 transition-transform duration-300 group-hover:scale-110 group-focus-visible:scale-110"
                   />
                   {item.name}
                 </span>
