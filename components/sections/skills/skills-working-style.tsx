@@ -1,5 +1,6 @@
 import { SKILLS_DATA } from "@/data/skills";
 import { FadeRight, StaggerContainer, StaggerItem } from "@/components/ui";
+import { TbCircleCheckFilled } from "react-icons/tb";
 
 export function SkillsWorkingStyle() {
   const { workingStyle } = SKILLS_DATA;
@@ -18,14 +19,20 @@ export function SkillsWorkingStyle() {
         </h3>
 
         <StaggerContainer>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3" aria-labelledby="skills-working-style-heading">
+          <ul
+            className="grid grid-cols-1 sm:grid-cols-2 gap-3"
+            aria-labelledby="skills-working-style-heading"
+          >
             {workingStyle.items.map((item) => (
               <li key={item.label} className="h-full">
                 <StaggerItem className="h-full">
-                  <div className="flex h-full items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 transition-all duration-300 hover:border-[#ef9d7a]/30 hover:bg-white/[0.04]">
-                    <span
+                  <div
+                    tabIndex={0}
+                    className="group/style flex h-full items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 transition-all duration-300 hover:border-[#ef9d7a]/35 hover:bg-white/[0.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909]"
+                  >
+                    <TbCircleCheckFilled
                       aria-hidden="true"
-                      className="size-1.5 shrink-0 rounded-full bg-[#ef9d7a]"
+                      className="size-4 shrink-0 text-[#ef9d7a]/60 transition-colors duration-300 group-hover/style:text-[#ef9d7a]"
                     />
                     <span className="font-poppins text-xs font-semibold text-text/85 sm:text-sm">
                       {item.label}

@@ -1,5 +1,5 @@
-import { SKILLS_DATA } from "@/data/skills";
 import { FadeUp } from "@/components/ui";
+import { SKILLS_DATA } from "@/data/skills";
 
 export function SkillsPhilosophy() {
   const { philosophy } = SKILLS_DATA;
@@ -24,9 +24,19 @@ export function SkillsPhilosophy() {
             {philosophy.title}
           </h3>
         </div>
+
         <blockquote className="flex-1 flex flex-col justify-center">
-          <p className="font-poppins text-sm italic font-normal leading-relaxed text-text/85 sm:text-base pl-4 border-l-2 border-[#8852F7]/50">
-            &ldquo;{philosophy.quote}&rdquo;
+          <p className="font-poppins text-sm font-normal leading-relaxed text-text/80 sm:text-base pl-4 border-l-2 border-[#8852F7]/50">
+            &ldquo;I enjoy building{" "}
+            <span className="font-semibold text-[#ef9d7a]">clean, responsive, and user-friendly</span>{" "}
+            web applications using{" "}
+            <span className="font-semibold text-[#8852F7]">modern technologies</span>.
+            Before seeking help, I prefer exploring solutions independently, then leverage{" "}
+            <span className="font-semibold text-[#ef9d7a]">AI tools</span>{" "}
+            to validate ideas, improve implementation quality, and continuously expand my knowledge.
+            I focus on writing{" "}
+            <span className="font-semibold text-[#8852F7]">reusable, maintainable, and production-ready code</span>{" "}
+            while always striving to improve my development skills.&rdquo;
           </p>
         </blockquote>
       </article>

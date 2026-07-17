@@ -6,3 +6,4 @@ export { SkillsHeader } from "./skills-header";
 export { SkillsPhilosophy } from "./skills-philosophy";
 export { SkillsText } from "./skills-text";
 export { SkillsWorkingStyle } from "./skills-working-style";
+export { SkillsIcon } from "./skills-icon";
