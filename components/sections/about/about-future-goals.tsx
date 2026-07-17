@@ -1,5 +1,5 @@
 import { ABOUT_DATA } from "@/data/about";
-import { FadeUp } from "@/components/ui";
+import { FadeRight } from "@/components/ui";
 
 import { AboutBlock } from "./about-block";
 import { AboutText } from "./about-text";
@@ -9,7 +9,7 @@ export function AboutFutureGoals() {
   const item = futureGoals.items[0];
 
   return (
-    <FadeUp className="h-full">
+    <FadeRight className="h-full">
       <AboutBlock
         title={futureGoals.title}
         headingId="about-goals-heading"
@@ -32,6 +32,6 @@ export function AboutFutureGoals() {
           </div>
         </div>
       </AboutBlock>
-    </FadeUp>
+    </FadeRight>
   );
 }
