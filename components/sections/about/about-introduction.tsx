@@ -8,14 +8,14 @@ export function AboutIntroduction() {
   const { introduction } = ABOUT_DATA;
 
   return (
-    <AboutBlock title={introduction.title} headingId="about-introduction-heading">
-      <FadeLeft>
+    <FadeLeft>
+      <AboutBlock title={introduction.title} headingId="about-introduction-heading">
         <div className="space-y-4">
           {introduction.paragraphs.map((paragraph) => (
             <AboutText key={paragraph}>{paragraph}</AboutText>
           ))}
         </div>
-      </FadeLeft>
-    </AboutBlock>
+      </AboutBlock>
+    </FadeLeft>
   );
 }

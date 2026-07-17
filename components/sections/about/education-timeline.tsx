@@ -1,6 +1,6 @@
 import type { AboutEducationItem } from "@/data/about";
 import { cn } from "@/utils/cn";
-import { ScaleIn, StaggerContainer, StaggerItem } from "@/components/ui";
+import { StaggerContainer, StaggerItem } from "@/components/ui";
 
 import { AboutText } from "./about-text";
 
@@ -43,11 +43,9 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
             <h4 className="font-rajdhani text-lg font-bold text-text sm:text-xl">
               {item.degree}
             </h4>
-            <ScaleIn delay={0.15} once={true}>
-              <time className="inline-flex shrink-0 self-start items-center rounded-full bg-[#ef9d7a]/10 border border-[#ef9d7a]/25 px-2.5 py-0.5 font-poppins text-xs font-semibold text-[#ef9d7a] sm:px-3 sm:py-0.5">
-                {item.period}
-              </time>
-            </ScaleIn>
+            <time className="inline-flex shrink-0 self-start items-center rounded-full bg-[#ef9d7a]/10 border border-[#ef9d7a]/25 px-2.5 py-0.5 font-poppins text-xs font-semibold text-[#ef9d7a] sm:px-3 sm:py-0.5">
+              {item.period}
+            </time>
           </div>
 
           <p className="font-poppins text-sm font-medium text-text/80">
