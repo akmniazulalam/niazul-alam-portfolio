@@ -1,41 +1,86 @@
-import { Container } from "@/components/ui";
+import { Container, FadeLeft, FadeRight, StaggerContainer, StaggerItem } from "@/components/ui";
 import { SKILLS_DATA } from "@/data/skills";
 
 import { SkillsCategoryGrid } from "./skills-category-grid";
-import { SkillsCurrentlyLearning } from "./skills-currently-learning";
+import { SkillsFavoriteStack } from "./skills-favorite-stack";
 import { SkillsHeader } from "./skills-header";
-import { SkillsIntroduction } from "./skills-introduction";
-import { SkillsSoftSkills } from "./skills-soft-skills";
+import { SkillsPhilosophy } from "./skills-philosophy";
+import { SkillsWorkingStyle } from "./skills-working-style";
 
 export function Skills() {
-  const [frontend, backend, database, tools] = SKILLS_DATA.categories;
+  const { categories } = SKILLS_DATA;
+
+  // Split categories for layout
+  const [frontend, styling, stateManagement, backend, database, authentication, deployment, tools, other] =
+    categories;
 
   return (
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="bg-[#0f0715]"
+      className="bg-[#0a0909]"
     >
       <Container className="py-16 sm:py-20 lg:py-24">
-        <div className="flex flex-col gap-10 sm:gap-12 lg:gap-16">
+        <div className="flex flex-col gap-12 sm:gap-14 lg:gap-16">
+
+          {/* ── Section Header ─────────────────────────────────────────── */}
           <SkillsHeader />
 
-          <SkillsIntroduction />
+          {/* ── Skill Categories ───────────────────────────────────────── */}
+          <div aria-label="Skill categories">
+            {/* Row 1: Frontend (left) + Styling (right) */}
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 mb-5">
+              <FadeLeft className="lg:col-span-2">
+                <SkillsCategoryGrid category={frontend} />
+              </FadeLeft>
+              <FadeRight>
+                <SkillsCategoryGrid category={styling} />
+              </FadeRight>
+            </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
-            <SkillsCategoryGrid category={frontend} />
-            <SkillsCategoryGrid category={backend} />
+            {/* Row 2: State Management + Backend + Database */}
+            <StaggerContainer>
+              <div className="grid gap-5 sm:grid-cols-3 mb-5">
+                <StaggerItem>
+                  <SkillsCategoryGrid category={stateManagement} />
+                </StaggerItem>
+                <StaggerItem>
+                  <SkillsCategoryGrid category={backend} />
+                </StaggerItem>
+                <StaggerItem>
+                  <SkillsCategoryGrid category={database} />
+                </StaggerItem>
+              </div>
+            </StaggerContainer>
+
+            {/* Row 3: Auth + Deployment + Tools + Other */}
+            <StaggerContainer>
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <StaggerItem>
+                  <SkillsCategoryGrid category={authentication} />
+                </StaggerItem>
+                <StaggerItem>
+                  <SkillsCategoryGrid category={deployment} />
+                </StaggerItem>
+                <StaggerItem>
+                  <SkillsCategoryGrid category={tools} />
+                </StaggerItem>
+                <StaggerItem>
+                  <SkillsCategoryGrid category={other} />
+                </StaggerItem>
+              </div>
+            </StaggerContainer>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
-            <SkillsCategoryGrid category={database} />
-            <SkillsCategoryGrid category={tools} />
+          {/* ── Philosophy + Working Style ──────────────────────────────── */}
+          <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">
+            <SkillsPhilosophy />
+            <SkillsWorkingStyle />
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
-            <SkillsSoftSkills />
-            <SkillsCurrentlyLearning />
-          </div>
+          {/* ── Favorite Stack ─────────────────────────────────────────── */}
+          <SkillsFavoriteStack />
+
         </div>
       </Container>
     </section>
