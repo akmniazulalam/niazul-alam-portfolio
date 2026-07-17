@@ -18,7 +18,7 @@ export function ScaleIn({
   delay = 0,
   duration = 0.5,
   once = true,
-  amount = 0.1,
+  amount = 0.5,
   initialScale = 0.95,
   className,
 }: ScaleInProps) {

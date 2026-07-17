@@ -18,7 +18,7 @@ export function FadeLeft({
   delay = 0,
   duration = 0.5,
   once = true,
-  amount = 0.1,
+  amount = 0.5,
   offset = -20,
   className,
 }: FadeLeftProps) {

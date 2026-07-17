@@ -17,7 +17,7 @@ export function StaggerContainer({
   staggerDelay = 0.1,
   delay = 0,
   once = true,
-  amount = 0.1,
+  amount = 0.5,
   className,
 }: StaggerContainerProps) {
   const shouldReduceMotion = useReducedMotion();

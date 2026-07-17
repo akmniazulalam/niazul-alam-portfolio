@@ -319,29 +319,47 @@ No layout breaking.
 
 # Animations
 
-Animations should be subtle.
+The project uses **Framer Motion** as the primary animation library.
 
-Prefer:
+All animations must reuse the shared animation components instead of creating new motion logic inside individual sections.
 
-Tailwind Transitions
+Animation Philosophy
 
-Hover Lift
+- Smooth
+- Premium
+- Minimal
+- Consistent
+- Performance-friendly
 
-Glow
+Animation Components
 
-Opacity
+- FadeUp
+- FadeLeft
+- FadeRight
+- ScaleIn
+- StaggerContainer
+- StaggerItem
+- SectionReveal
 
-Translate
+Animation Rules
 
-Scale
+- Animate the entire component/card rather than only internal content whenever appropriate.
+- Use stagger animations for grids and timelines.
+- Keep hover interactions subtle.
+- Use glow effects that match the existing design system.
+- Animation duration should generally remain between **0.45s and 0.6s** using an easeOut transition.
+- Scroll animations should trigger after approximately **30–40%** of the element becomes visible.
+- Animations should play only once.
+- Always respect the user's prefers-reduced-motion preference.
+- Do not create duplicate animation implementations.
+- Reuse the shared animation wrappers throughout the project.
 
-Avoid:
+Avoid
 
-Heavy animations
-
-Distracting effects
-
-Do not install animation libraries unless explicitly requested.
+- Heavy animations
+- Excessive movement
+- Random animation styles
+- Different animation behaviors across sections
 
 ---
 
@@ -419,7 +437,7 @@ Every new feature follows:
 
 ↓
 
-2. Review
+2. UI/UX Review
 
 ↓
 
@@ -431,15 +449,19 @@ Every new feature follows:
 
 ↓
 
-5. Accessibility
+5. Accessibility Review
 
 ↓
 
-6. Performance Check
+6. Animation Pass
 
 ↓
 
-7. Final Polish
+7. Performance Check
+
+↓
+
+8. Final Polish
 
 Never skip this workflow.
 
@@ -461,17 +483,20 @@ Completed:
 - Future Goals
 - Hobbies
 - Resume CTA
+- Reusable Animation System
+- About Final UI Polish
+- About Animations
 
 Pending:
 
-- About Final Polish
 - Skills
 - Experience
 - Projects
 - Contact
 - Footer
-- SEO
+- SEO Optimization
 - Performance Optimization
+- Final Testing
 - Deployment
 
 Update this list after completing major sections.
@@ -512,7 +537,46 @@ Before making any change:
 
 15. If a requirement is unclear, preserve the current architecture and ask for clarification instead of making assumptions.
 
+16. Always reuse the shared Framer Motion animation components.
+
+17. Never create section-specific animation logic if an existing wrapper can be reused.
+
+18. Maintain a consistent motion language across the entire portfolio.
+
 ---
+
+# Motion Design System
+
+Every section should follow the same animation language.
+
+Section Heading
+→ FadeUp
+
+Section Description
+→ FadeUp (delay)
+
+Left Column
+→ FadeLeft
+
+Right Column
+→ FadeRight
+
+Cards
+→ Animate as a whole
+
+Timelines
+→ StaggerContainer + StaggerItem
+
+Buttons
+→ Hover Lift + Micro Interaction
+
+Images
+→ Fade + Scale
+
+Resume CTA
+→ FadeUp
+
+The same animation language must be reused across Hero, About, Skills, Experience, Projects, Contact, and Footer.
 
 # Final Goal
 
