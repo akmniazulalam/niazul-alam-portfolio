@@ -1,4 +1,5 @@
 import { ABOUT_DATA } from "@/data/about";
+import { FadeUp } from "@/components/ui";
 
 import { AboutBlock } from "./about-block";
 import { AboutText } from "./about-text";
@@ -13,7 +14,7 @@ export function AboutFutureGoals() {
       headingId="about-goals-heading"
       className="border-[#FF014F]/20 bg-gradient-to-br from-[#FF014F]/5 to-transparent h-full flex flex-col"
     >
-      <div className="flex-1 flex flex-col justify-center">
+      <FadeUp className="flex-1 flex flex-col justify-center">
         <div className="flex gap-4 items-start">
           <div
             aria-hidden="true"
@@ -28,7 +29,7 @@ export function AboutFutureGoals() {
             <AboutText className="text-text/80">{item.description}</AboutText>
           </div>
         </div>
-      </div>
+      </FadeUp>
     </AboutBlock>
   );
 }

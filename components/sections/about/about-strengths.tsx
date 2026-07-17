@@ -1,5 +1,6 @@
 import { ABOUT_DATA } from "@/data/about";
 import { cn } from "@/utils/cn";
+import { ScaleIn } from "@/components/ui";
 
 import { AboutBlock } from "./about-block";
 import { AboutFeatureCard } from "./about-feature-card";
@@ -22,7 +23,9 @@ export function AboutStrengths() {
               index === strengths.items.length - 1 ? "sm:col-span-2" : "",
             )}
           >
-            <AboutFeatureCard item={item} index={index} />
+            <ScaleIn className="h-full">
+              <AboutFeatureCard item={item} index={index} />
+            </ScaleIn>
           </li>
         ))}
       </ul>

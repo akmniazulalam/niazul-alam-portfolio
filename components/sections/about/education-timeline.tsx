@@ -1,5 +1,6 @@
 import type { AboutEducationItem } from "@/data/about";
 import { cn } from "@/utils/cn";
+import { ScaleIn, StaggerContainer, StaggerItem } from "@/components/ui";
 
 import { AboutText } from "./about-text";
 
@@ -31,46 +32,52 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
         />
       )}
 
-      <article
-        className={cn(
-          "relative ml-8 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition-all duration-300 sm:p-5",
-          "hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-lg hover:shadow-[#8852F7]/5",
-        )}
-      >
-        <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-          <h4 className="font-rajdhani text-lg font-bold text-text sm:text-xl">
-            {item.degree}
-          </h4>
-          <time className="inline-flex shrink-0 self-start items-center rounded-full bg-[#ef9d7a]/10 border border-[#ef9d7a]/25 px-2.5 py-0.5 font-poppins text-xs font-semibold text-[#ef9d7a] sm:px-3 sm:py-0.5">
-            {item.period}
-          </time>
-        </div>
+      <StaggerItem>
+        <article
+          className={cn(
+            "relative ml-8 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition-all duration-300 sm:p-5",
+            "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
+          )}
+        >
+          <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+            <h4 className="font-rajdhani text-lg font-bold text-text sm:text-xl">
+              {item.degree}
+            </h4>
+            <ScaleIn delay={0.15} once={true}>
+              <time className="inline-flex shrink-0 self-start items-center rounded-full bg-[#ef9d7a]/10 border border-[#ef9d7a]/25 px-2.5 py-0.5 font-poppins text-xs font-semibold text-[#ef9d7a] sm:px-3 sm:py-0.5">
+                {item.period}
+              </time>
+            </ScaleIn>
+          </div>
 
-        <p className="font-poppins text-sm font-medium text-text/80">
-          {item.institution}
-        </p>
+          <p className="font-poppins text-sm font-medium text-text/80">
+            {item.institution}
+          </p>
 
-        {item.description ? (
-          <AboutText className="mt-2">{item.description}</AboutText>
-        ) : null}
-      </article>
+          {item.description ? (
+            <AboutText className="mt-2">{item.description}</AboutText>
+          ) : null}
+        </article>
+      </StaggerItem>
     </li>
   );
 }
 
 export function EducationTimeline({ items, className }: EducationTimelineProps) {
   return (
-    <ol
-      className={cn("relative list-none", className)}
-      aria-label="Education history"
-    >
-      {items.map((item, index) => (
-        <EducationTimelineItem
-          key={`${item.degree}-${item.institution}`}
-          item={item}
-          isLast={index === items.length - 1}
-        />
-      ))}
-    </ol>
+    <StaggerContainer>
+      <ol
+        className={cn("relative list-none", className)}
+        aria-label="Education history"
+      >
+        {items.map((item, index) => (
+          <EducationTimelineItem
+            key={`${item.degree}-${item.institution}`}
+            item={item}
+            isLast={index === items.length - 1}
+          />
+        ))}
+      </ol>
+    </StaggerContainer>
   );
 }

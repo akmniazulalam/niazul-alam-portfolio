@@ -27,7 +27,7 @@ export function ResumeCTA({
   return (
     <article
       className={cn(
-        "relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.03] to-[#FF014F]/[0.02] p-6 sm:p-8 lg:p-10 shadow-xl shadow-black/10 transition-all duration-300 hover:border-[#FF014F]/30 hover:shadow-[#FF014F]/5",
+        "relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.03] to-[#FF014F]/[0.02] p-6 sm:p-8 lg:p-10 shadow-xl shadow-black/10 transition-all duration-300 hover:border-[#FF014F]/30 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
         className,
       )}
     >
@@ -51,7 +51,7 @@ export function ResumeCTA({
             aria-label={`${buttonLabel} (PDF)`}
             className={cn(
               buttonBaseStyles,
-              "bg-[#FF014F] text-white shadow-lg shadow-[#FF014F]/15 hover:-translate-y-0.5 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/25",
+              "bg-[#FF014F] text-white shadow-lg shadow-[#FF014F]/15 hover:-translate-y-1 hover:bg-[#FF014F]/90 hover:shadow-[0_0_20px_rgba(255,1,79,0.4)]",
             )}
           >
             {buttonLabel}
@@ -61,7 +61,7 @@ export function ResumeCTA({
             href={secondaryButtonHref}
             className={cn(
               buttonBaseStyles,
-              "border border-[#ef9d7a]/40 bg-transparent text-text hover:-translate-y-0.5 hover:border-[#ef9d7a] hover:bg-[#ef9d7a]/10",
+              "border border-[#ef9d7a]/40 bg-transparent text-text hover:-translate-y-1 hover:border-[#ef9d7a] hover:bg-[#ef9d7a]/10 hover:shadow-[0_0_20px_rgba(239,157,122,0.15)]",
             )}
           >
             {secondaryButtonLabel}
