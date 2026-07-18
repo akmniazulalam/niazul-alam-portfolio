@@ -6,7 +6,7 @@ type HeroSocialLinksProps = {
 };
 
 const socialIconStyles =
-  "inline-flex size-11 items-center justify-center rounded-full border border-white/10 text-muted transition-colors duration-300";
+  "inline-flex size-11 items-center justify-center rounded-full border border-white/10 text-muted transition-all duration-300";
 
 function GitHubIcon() {
   return (
@@ -29,7 +29,20 @@ function LinkedInIcon() {
       fill="currentColor"
       viewBox="0 0 24 24"
     >
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.003z" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="size-5"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
     </svg>
   );
 }
@@ -56,6 +69,7 @@ function EmailIcon() {
 const SOCIAL_ICONS = {
   github: GitHubIcon,
   linkedin: LinkedInIcon,
+  facebook: FacebookIcon,
   email: EmailIcon,
 } as const;
 
@@ -67,15 +81,22 @@ export function HeroSocialLinks({ className }: HeroSocialLinksProps) {
     >
       {SOCIAL_LINKS.map((link) => {
         const Icon = SOCIAL_ICONS[link.id];
+        const isExternal = link.href.startsWith("http");
 
         return (
           <li key={link.id}>
-            <span
-              aria-label={`${link.label} — link coming soon`}
-              className={cn(socialIconStyles, "cursor-default opacity-70")}
+            <a
+              href={link.href}
+              aria-label={link.label}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+              className={cn(
+                socialIconStyles,
+                "cursor-pointer hover:border-[#ef9d7a]/50 hover:text-[#ef9d7a] hover:bg-white/[0.03] hover:shadow-[0_0_15px_rgba(239,157,122,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+              )}
             >
               <Icon />
-            </span>
+            </a>
           </li>
         );
       })}
