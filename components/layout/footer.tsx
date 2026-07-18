@@ -42,9 +42,9 @@ export function Footer() {
           {/* ── Column 2: Quick Links (StaggerContainer) ─────────────── */}
           <div className="space-y-4 md:col-span-3 lg:col-span-3">
             <FadeUp amount="some">
-              <h2 className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
+              <h3 className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
                 Quick Links
-              </h2>
+              </h3>
             </FadeUp>
             <StaggerContainer staggerDelay={0.05} amount="some">
               <ul className="flex flex-col gap-2.5 font-rajdhani text-sm font-bold uppercase tracking-wider">
@@ -67,9 +67,9 @@ export function Footer() {
           {/* ── Column 3: Social Links (StaggerContainer) ────────────── */}
           <div className="space-y-4 md:col-span-4 lg:col-span-3">
             <FadeUp amount="some">
-              <h2 className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
+              <h3 className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
                 Connect Online
-              </h2>
+              </h3>
             </FadeUp>
             <StaggerContainer staggerDelay={0.05} amount="some">
               <ul className="flex flex-wrap items-center gap-3" aria-label="Social media profiles">
