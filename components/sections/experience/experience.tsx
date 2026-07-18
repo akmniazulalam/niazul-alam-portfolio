@@ -1,4 +1,4 @@
-import { Container } from "@/components/ui";
+import { Container, StaggerContainer } from "@/components/ui";
 import { ExperienceHeader } from "./experience-header";
 import { ExperienceCard } from "./experience-card";
 
@@ -12,7 +12,9 @@ export function Experience() {
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col gap-12 sm:gap-14 lg:gap-16">
           <ExperienceHeader />
-          <ExperienceCard />
+          <StaggerContainer staggerDelay={0.1} amount="some">
+            <ExperienceCard />
+          </StaggerContainer>
         </div>
       </Container>
     </section>
