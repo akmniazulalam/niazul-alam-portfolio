@@ -3,6 +3,33 @@ import { FadeUp, StaggerContainer, StaggerItem } from "@/components/ui";
 import { TbCalendar, TbMapPin, TbCheck } from "react-icons/tb";
 import { SkillsIcon } from "../skills";
 
+function formatTextWithHighlights(text: string): React.ReactNode {
+  const highlights: Record<string, string> = {
+    "responsive CMS and Shopify pages": "text-[#ef9d7a] font-semibold",
+    "Shopify themes": "text-[#8852F7] font-semibold",
+    "reusable UI components": "text-[#ef9d7a] font-semibold",
+    "frontend bugs": "text-[#8852F7] font-semibold",
+    "UI consistency": "text-[#ef9d7a] font-semibold",
+    "development team": "text-text font-semibold",
+    "multiple screen sizes": "text-[#8852F7] font-semibold",
+  };
+
+  const regex = new RegExp(`(${Object.keys(highlights).join("|")})`, "g");
+  const parts = text.split(regex);
+
+  return parts.map((part, index) => {
+    const className = highlights[part];
+    if (className) {
+      return (
+        <span key={index} className={className}>
+          {part}
+        </span>
+      );
+    }
+    return part;
+  });
+}
+
 export function ExperienceCard() {
   const { experience } = EXPERIENCE_DATA;
 
@@ -22,7 +49,7 @@ export function ExperienceCard() {
 
       <FadeUp>
         <article
-          aria-labelledby="experience-company-heading"
+          aria-labelledby="experience-job-heading"
           className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
         >
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
@@ -34,13 +61,13 @@ export function ExperienceCard() {
                   {experience.employmentType}
                 </span>
                 <h3
-                  id="experience-company-heading"
+                  id="experience-job-heading"
                   className="font-rajdhani text-2xl font-bold text-text sm:text-3xl"
                 >
-                  {experience.company}
-                </h3>
-                <p className="font-rajdhani text-lg font-bold text-[#8852F7] mt-1 sm:text-xl">
                   {experience.position}
+                </h3>
+                <p className="font-rajdhani text-lg font-bold text-[#ef9d7a] mt-1 sm:text-xl">
+                  {experience.company}
                 </p>
               </div>
 
@@ -105,7 +132,7 @@ export function ExperienceCard() {
                             <TbCheck aria-hidden="true" className="size-3" />
                           </span>
                           <span className="font-poppins text-sm leading-relaxed text-text/75 transition-colors duration-300 group-hover:text-text group-focus-visible:text-text">
-                            {resp}
+                            {formatTextWithHighlights(resp)}
                           </span>
                         </div>
                       </StaggerItem>
@@ -114,6 +141,7 @@ export function ExperienceCard() {
                 </ul>
               </StaggerContainer>
             </div>
+
           </div>
         </article>
       </FadeUp>
