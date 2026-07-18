@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout";
+import { Navbar, Footer, BackToTop } from "@/components/layout";
 import { fontVariables } from "@/lib/fonts";
 import { metadata } from "@/lib/metadata";
 import { cn } from "@/utils/cn";
@@ -22,6 +22,8 @@ export default function RootLayout({
         <main id="main-content" className="flex-1">
           {children}
         </main>
+        <Footer />
+        <BackToTop />
       </body>
     </html>
   );
