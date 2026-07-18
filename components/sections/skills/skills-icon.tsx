@@ -24,6 +24,7 @@ import {
   SiPostman,
   SiFigma,
   SiCursor,
+  SiShopify,
 } from "react-icons/si";
 import {
   TbHierarchy,
@@ -31,13 +32,17 @@ import {
   TbApi,
   TbDeviceLaptop,
   TbSearch,
+  TbDroplet,
 } from "react-icons/tb";
 import { VscVscode, VscSparkle, VscRobot } from "react-icons/vsc";
 
 const iconMap: Record<string, IconType> = {
+  "html": SiHtml5,
   "html5": SiHtml5,
+  "css": SiCss,
   "css3": SiCss,
   "javascript (es6+)": SiJavascript,
+  "javascript": SiJavascript,
   "typescript": SiTypescript,
   "jquery": SiJquery,
   "react": SiReact,
@@ -67,6 +72,8 @@ const iconMap: Record<string, IconType> = {
   "rest api integration": TbApi,
   "responsive web design": TbDeviceLaptop,
   "basic seo": TbSearch,
+  "shopify": SiShopify,
+  "liquid": TbDroplet,
 };
 
 type SkillsIconProps = {

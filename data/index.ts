@@ -7,3 +7,6 @@ export type {
 } from "./about";
 export { SKILLS_DATA } from "./skills";
 export type { SkillCategory, SkillItem } from "./skills";
+export { EXPERIENCE_DATA } from "./experience";
+export type { ExperienceItem } from "./experience";
+
