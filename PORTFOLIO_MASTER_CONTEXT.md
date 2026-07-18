@@ -492,8 +492,8 @@ Completed:
 
 Pending:
 
-- Projects
 - Footer
+- Projects
 - SEO Optimization
 - Performance Optimization
 - Final Testing
