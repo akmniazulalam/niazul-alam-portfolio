@@ -486,11 +486,11 @@ Completed:
 - Reusable Animation System
 - About Final UI Polish
 - About Animations
+- Skills Section
+- Experience Section
 
 Pending:
 
-- Skills
-- Experience
 - Projects
 - Contact
 - Footer
