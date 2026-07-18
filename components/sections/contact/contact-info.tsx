@@ -1,6 +1,6 @@
 import { CONTACT_DATA } from "@/data/contact";
 import { TbPhone, TbMail, TbMapPin } from "react-icons/tb";
-import { FadeLeft, StaggerContainer, StaggerItem } from "@/components/ui";
+import { FadeLeft, FadeUp, StaggerContainer, StaggerItem } from "@/components/ui";
 import { HeroSocialLinks } from "../hero/hero-social-links";
 
 export function ContactInfo() {
@@ -8,24 +8,27 @@ export function ContactInfo() {
 
   return (
     <FadeLeft className="flex flex-col gap-8">
-      {/* Contact Cards */}
-      <StaggerContainer staggerDelay={0.05} amount="some">
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1" aria-label="Contact methods">
-          {/* Email Card */}
+      {/* ── Contact Cards ─────────────────────────────────────────────── */}
+      <StaggerContainer staggerDelay={0.07} amount="some">
+        <ul
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1"
+          aria-label="Contact methods"
+        >
+          {/* Email */}
           <li>
             <StaggerItem>
               <a
                 href={`mailto:${info.email}`}
-                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_25px_rgba(135,80,247,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28]"
               >
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-colors duration-300 group-hover:bg-[#8852F7] group-hover:text-white">
-                  <TbMail className="size-6" aria-hidden="true" />
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-all duration-300 group-hover:bg-[#8852F7] group-hover:text-white group-hover:shadow-[0_0_15px_rgba(136,82,247,0.4)]">
+                  <TbMail className="size-5" aria-hidden="true" />
                 </div>
-                <div className="space-y-1">
-                  <h3 className="font-rajdhani text-sm font-bold uppercase tracking-wider text-text/50">
+                <div className="min-w-0 space-y-1">
+                  <p className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
                     Email
-                  </h3>
-                  <p className="font-poppins text-sm font-medium text-text transition-colors duration-300 group-hover:text-[#ef9d7a] break-all">
+                  </p>
+                  <p className="font-poppins text-sm font-medium leading-snug text-text/90 transition-colors duration-300 group-hover:text-[#ef9d7a] break-all">
                     {info.email}
                   </p>
                 </div>
@@ -33,21 +36,21 @@ export function ContactInfo() {
             </StaggerItem>
           </li>
 
-          {/* Phone Card */}
+          {/* Phone */}
           <li>
             <StaggerItem>
               <a
                 href={`tel:${info.phone}`}
-                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_25px_rgba(135,80,247,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28]"
               >
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-colors duration-300 group-hover:bg-[#8852F7] group-hover:text-white">
-                  <TbPhone className="size-6" aria-hidden="true" />
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-all duration-300 group-hover:bg-[#8852F7] group-hover:text-white group-hover:shadow-[0_0_15px_rgba(136,82,247,0.4)]">
+                  <TbPhone className="size-5" aria-hidden="true" />
                 </div>
-                <div className="space-y-1">
-                  <h3 className="font-rajdhani text-sm font-bold uppercase tracking-wider text-text/50">
+                <div className="min-w-0 space-y-1">
+                  <p className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
                     Phone
-                  </h3>
-                  <p className="font-poppins text-sm font-medium text-text transition-colors duration-300 group-hover:text-[#ef9d7a]">
+                  </p>
+                  <p className="font-poppins text-sm font-medium leading-snug text-text/90 transition-colors duration-300 group-hover:text-[#ef9d7a]">
                     {info.phone}
                   </p>
                 </div>
@@ -55,21 +58,21 @@ export function ContactInfo() {
             </StaggerItem>
           </li>
 
-          {/* Address Card */}
+          {/* Address */}
           <li className="sm:col-span-2 lg:col-span-1">
             <StaggerItem>
               <div
                 tabIndex={0}
-                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 transition-all duration-300 hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:p-6 transition-all duration-300 hover:border-[#8852F7]/20 hover:bg-white/[0.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28]"
               >
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-colors duration-300 group-hover:text-[#8852F7] group-hover:bg-[#8852F7]/20">
-                  <TbMapPin className="size-6" aria-hidden="true" />
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-all duration-300 group-hover:bg-[#8852F7]/15 group-hover:text-[#8852F7]">
+                  <TbMapPin className="size-5" aria-hidden="true" />
                 </div>
-                <div className="space-y-1.5">
-                  <h3 className="font-rajdhani text-sm font-bold uppercase tracking-wider text-text/50">
+                <div className="min-w-0 space-y-1.5">
+                  <p className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
                     Address
-                  </h3>
-                  <address className="font-poppins text-sm not-italic leading-relaxed text-text/80">
+                  </p>
+                  <address className="font-poppins text-sm not-italic leading-relaxed text-text/75">
                     {info.address.map((line, index) => (
                       <span key={index} className="block">
                         {line}
@@ -83,26 +86,28 @@ export function ContactInfo() {
         </ul>
       </StaggerContainer>
 
-      {/* Availability Status */}
-      <StaggerItem>
-        <div className="flex items-center gap-3 rounded-2xl border border-[#ef9d7a]/20 bg-[#ef9d7a]/5 p-4">
-          <span className="relative flex size-3 shrink-0">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
+      {/* ── Availability Badge ─────────────────────────────────────────── */}
+      <FadeUp delay={0.3} amount="some">
+        <div className="flex items-center gap-2.5 rounded-xl border border-[#ef9d7a]/20 bg-[#ef9d7a]/5 px-4 py-3">
+          <span className="relative flex size-2.5 shrink-0" aria-hidden="true">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+            <span className="relative inline-flex size-2.5 rounded-full bg-green-500 shadow-[0_0_6px_rgba(74,222,128,0.6)]" />
           </span>
-          <p className="font-poppins text-xs font-semibold text-[#ef9d7a] uppercase tracking-wide">
+          <p className="font-poppins text-xs font-semibold leading-none text-[#ef9d7a]">
             {info.availability}
           </p>
         </div>
-      </StaggerItem>
+      </FadeUp>
 
-      {/* Social Links */}
-      <div className="space-y-3">
-        <h3 className="font-rajdhani text-sm font-bold uppercase tracking-wider text-text/50">
-          Connect Online
-        </h3>
-        <HeroSocialLinks />
-      </div>
+      {/* ── Social Links ───────────────────────────────────────────────── */}
+      <FadeUp delay={0.4} amount="some">
+        <div className="space-y-3">
+          <p className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
+            Connect Online
+          </p>
+          <HeroSocialLinks />
+        </div>
+      </FadeUp>
     </FadeLeft>
   );
 }
