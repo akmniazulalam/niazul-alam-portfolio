@@ -10,7 +10,7 @@ const labelClass =
 
 export function ContactForm() {
   return (
-    <FadeRight className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 lg:p-10 shadow-[0_8px_40px_rgba(0,0,0,0.3)]">
+    <FadeRight amount="some" className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 lg:p-10 shadow-[0_8px_40px_rgba(0,0,0,0.3)]">
       <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
         {/* Row: Name + Email */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
