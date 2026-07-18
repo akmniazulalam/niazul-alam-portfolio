@@ -24,7 +24,7 @@ export function ContactForm() {
               name="name"
               required
               autoComplete="name"
-              placeholder="John Doe"
+              placeholder="Your Name"
               className={inputClass}
             />
           </div>
@@ -39,7 +39,7 @@ export function ContactForm() {
               name="email"
               required
               autoComplete="email"
-              placeholder="john@example.com"
+              placeholder="Your Email"
               className={inputClass}
             />
           </div>
