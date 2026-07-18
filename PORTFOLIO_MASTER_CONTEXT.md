@@ -489,10 +489,10 @@ Completed:
 - Skills Section
 - Experience Section
 - Contact
+- Footer
 
 Pending:
 
-- Footer
 - Projects
 - SEO Optimization
 - Performance Optimization
