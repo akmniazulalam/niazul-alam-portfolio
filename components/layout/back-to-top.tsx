@@ -44,10 +44,10 @@ export function BackToTop() {
           type="button"
           aria-label="Back to top"
           className={cn(
-            "fixed bottom-6 right-6 z-50 flex size-12 cursor-pointer items-center justify-center rounded-full bg-[#8852F7] text-white shadow-[0_0_20px_rgba(136,82,247,0.4)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8852F7]/95 hover:shadow-[0_0_30px_rgba(136,82,247,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] sm:bottom-8 sm:right-8"
+            "fixed bottom-6 right-6 z-50 flex size-10 cursor-pointer items-center justify-center rounded-full bg-[#8852F7] text-white shadow-[0_0_20px_rgba(136,82,247,0.4)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8852F7]/95 hover:shadow-[0_0_30px_rgba(136,82,247,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] sm:bottom-8 sm:right-8 sm:size-12"
           )}
         >
-          <TbArrowUp className="size-6" aria-hidden="true" />
+          <TbArrowUp className="size-5 sm:size-6" aria-hidden="true" />
         </motion.button>
       )}
     </AnimatePresence>
