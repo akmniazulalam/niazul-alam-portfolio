@@ -8,7 +8,7 @@ type HeroSocialLinksProps = {
 const socialIconStyles =
   "inline-flex size-11 items-center justify-center rounded-full border border-white/10 text-muted transition-all duration-300";
 
-function GitHubIcon() {
+export function GitHubIcon() {
   return (
     <svg
       aria-hidden="true"
@@ -21,7 +21,7 @@ function GitHubIcon() {
   );
 }
 
-function LinkedInIcon() {
+export function LinkedInIcon() {
   return (
     <svg
       aria-hidden="true"
@@ -34,7 +34,7 @@ function LinkedInIcon() {
   );
 }
 
-function FacebookIcon() {
+export function FacebookIcon() {
   return (
     <svg
       aria-hidden="true"
@@ -47,7 +47,7 @@ function FacebookIcon() {
   );
 }
 
-function EmailIcon() {
+export function EmailIcon() {
   return (
     <svg
       aria-hidden="true"
