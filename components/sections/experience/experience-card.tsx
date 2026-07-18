@@ -44,15 +44,14 @@ export function ExperienceCard() {
       {/* Timeline node */}
       <div
         aria-hidden="true"
-        className="absolute left-4 sm:left-6 md:left-8 top-8 z-10 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0f0715] transition-all duration-300 group-hover/timeline:border-[#ef9d7a] group-hover/timeline:scale-110 group-hover/timeline:shadow-[0_0_15px_rgba(239,157,122,0.5)]"
+        className="absolute left-4 sm:left-6 md:left-8 top-6 sm:top-8 z-10 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0f0715] transition-all duration-300 group-hover/timeline:border-[#ef9d7a] group-hover/timeline:scale-110 group-hover/timeline:shadow-[0_0_15px_rgba(239,157,122,0.5)]"
       />
 
       <FadeRight>
-        <StaggerItem>
-          <article
-            aria-labelledby="experience-job-heading"
-            className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
-          >
+        <article
+          aria-labelledby="experience-job-heading"
+          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
+        >
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
               
               {/* ── Left Column: Job Details & Tech Stack ────────────────── */}
@@ -88,7 +87,7 @@ export function ExperienceCard() {
 
                 {/* Tech Stack used */}
                 <div className="space-y-3">
-                  <h4 className="font-rajdhani text-base font-bold text-text uppercase tracking-wider">
+                  <h4 className="font-rajdhani text-base font-bold text-text uppercase tracking-wider pb-2 border-b border-white/[0.06]">
                     Technologies Used
                   </h4>
                   <StaggerContainer staggerDelay={0.03} amount="some">
@@ -98,7 +97,7 @@ export function ExperienceCard() {
                           <StaggerItem>
                             <span
                               tabIndex={0}
-                              className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 bg-white/[0.02] px-3 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] group"
+                              className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 bg-white/[0.02] px-3 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] group"
                             >
                               <SkillsIcon
                                 name={tech}
@@ -116,7 +115,7 @@ export function ExperienceCard() {
 
               {/* ── Right Column: Responsibilities ───────────────────────── */}
               <div className="lg:col-span-7 flex flex-col gap-4">
-                <h4 className="font-rajdhani text-lg font-bold text-text uppercase tracking-wider">
+                <h4 className="font-rajdhani text-lg font-bold text-text uppercase tracking-wider pb-2 border-b border-white/[0.06]">
                   Responsibilities
                 </h4>
                 
@@ -127,7 +126,7 @@ export function ExperienceCard() {
                         <StaggerItem>
                           <div
                             tabIndex={0}
-                            className="group flex items-start gap-3.5 rounded-xl bg-white/[0.01] border border-white/[0.03] px-4 py-3 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909]"
+                            className="group flex items-start gap-3.5 rounded-xl bg-white/[0.01] border border-white/[0.03] px-4 py-3 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
                           >
                             <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-xs text-[#ef9d7a] transition-all duration-300 group-hover:bg-[#ef9d7a]/20 group-focus-visible:bg-[#ef9d7a]/20">
                               <TbCheck aria-hidden="true" className="size-3" />
@@ -145,7 +144,6 @@ export function ExperienceCard() {
 
             </div>
           </article>
-        </StaggerItem>
       </FadeRight>
     </div>
   );
