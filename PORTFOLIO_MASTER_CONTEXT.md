@@ -488,11 +488,11 @@ Completed:
 - About Animations
 - Skills Section
 - Experience Section
+- Contact
 
 Pending:
 
 - Projects
-- Contact
 - Footer
 - SEO Optimization
 - Performance Optimization
