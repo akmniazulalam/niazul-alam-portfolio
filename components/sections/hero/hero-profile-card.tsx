@@ -1,16 +1,14 @@
 import Image from "next/image";
-
+import profileImage from "@/public/niazulalam.png"
 import { SITE_CONFIG } from "@/constants/site";
 import { cn } from "@/utils/cn";
 
 type HeroProfileCardProps = {
-  imageSrc?: string;
   imageAlt?: string;
   className?: string;
 };
 
 export function HeroProfileCard({
-  imageSrc,
   imageAlt = `${SITE_CONFIG.name} profile photo`,
   className,
 }: HeroProfileCardProps) {
@@ -29,9 +27,9 @@ export function HeroProfileCard({
 
       <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
         <div className="relative aspect-4/5 w-full">
-          {imageSrc ? (
+          {profileImage ? (
             <Image
-              src={imageSrc}
+              src={profileImage}
               alt={imageAlt}
               fill
               priority
