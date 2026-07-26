@@ -132,7 +132,7 @@ export function FeaturedProjectCard() {
                   <span className="flex size-4.5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-[#ef9d7a]">
                     <TbCheck className="size-3 font-bold" aria-hidden="true" />
                   </span>
-                  <span className="font-poppins text-xs text-text/80 leading-none">
+                  <span className="font-poppins text-xs text-text/80">
                     {feat}
                   </span>
                 </li>
