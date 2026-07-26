@@ -106,7 +106,7 @@ export function ContactInfo() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
             <span className="relative inline-flex size-2.5 rounded-full bg-green-500 shadow-[0_0_6px_rgba(74,222,128,0.6)]" />
           </span>
-          <p className="font-poppins text-xs font-semibold leading-none text-[#ef9d7a]">
+          <p className="font-poppins text-xs font-semibold text-[#ef9d7a]">
             {info.availability}
           </p>
         </div>
