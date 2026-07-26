@@ -16,7 +16,7 @@ export function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="bg-[#0a0909]">
+      className="scroll-mt-16 bg-[#0a0909] lg:scroll-mt-20">
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col gap-10 sm:gap-12 lg:gap-14">
           <AboutHeader />

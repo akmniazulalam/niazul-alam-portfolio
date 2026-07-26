@@ -8,7 +8,7 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="bg-gradient-to-b from-[#0a0909] to-[#0f0715]"
+      className="scroll-mt-16 bg-gradient-to-b from-[#0a0909] to-[#0f0715] lg:scroll-mt-20"
     >
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col gap-12 sm:gap-14 lg:gap-16">

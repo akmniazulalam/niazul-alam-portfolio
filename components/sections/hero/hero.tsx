@@ -16,7 +16,8 @@ export function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="min-h-screen bg-gradient-to-b from-[#0f0715] to-[#1c0d28]"
+      className="min-h-screen scroll-mt-16 bg-gradient-to-b from-[#0f0715] to-[#1c0d28] lg:scroll-mt-20"
+
     >
       <Container className="flex min-h-screen items-center py-16 sm:py-20 lg:py-24">
         <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">

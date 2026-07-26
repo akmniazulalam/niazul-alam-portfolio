@@ -7,7 +7,7 @@ export function Experience() {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="bg-gradient-to-b from-[#0f0715] to-[#1c0d28]"
+      className="scroll-mt-16 bg-gradient-to-b from-[#0f0715] to-[#1c0d28] lg:scroll-mt-20"
     >
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col gap-12 sm:gap-14 lg:gap-16">

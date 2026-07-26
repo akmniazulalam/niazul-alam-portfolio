@@ -14,7 +14,8 @@ export function FeaturedProjectCard() {
   return (
     <div className="space-y-10 sm:space-y-12">
       {/* Main Project Card Container */}
-      <FadeUp amount="some">
+      <FadeUp amount={0.38}>
+
         <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 lg:p-10 transition-all duration-500 hover:border-[#8852F7]/30 hover:shadow-[0_0_50px_rgba(135,80,247,0.15)] shadow-xl">
           {/* Subtle overlay card background gradient */}
           <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-[#8852F7]/[0.02] via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
@@ -143,7 +144,8 @@ export function FeaturedProjectCard() {
       </FadeUp>
 
       {/* Gallery Screenshots Container */}
-      <FadeUp delay={0.1} amount="some">
+      <FadeUp delay={0.1} amount={0.3}>
+
         <ProjectGallery images={featured.gallery} />
       </FadeUp>
     </div>

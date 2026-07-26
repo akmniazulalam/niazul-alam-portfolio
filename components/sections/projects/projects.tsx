@@ -11,7 +11,7 @@ export function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="bg-gradient-to-b from-[#1c0d28] to-[#0a0909]"
+      className="scroll-mt-16 bg-gradient-to-b from-[#1c0d28] to-[#0a0909] lg:scroll-mt-20"
     >
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20">

@@ -18,7 +18,7 @@ export function Skills() {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="bg-[#0a0909]"
+      className="scroll-mt-16 bg-[#0a0909] lg:scroll-mt-20"
     >
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col gap-12 sm:gap-14 lg:gap-16">
@@ -27,7 +27,7 @@ export function Skills() {
           <SkillsHeader />
 
           {/* ── Skill Categories ───────────────────────────────────────── */}
-          <StaggerContainer>
+          <StaggerContainer amount={0.25}>
             <div className="flex flex-col gap-5" aria-label="Skill categories">
               {/* Row 1: Frontend (left) + Styling (right) */}
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

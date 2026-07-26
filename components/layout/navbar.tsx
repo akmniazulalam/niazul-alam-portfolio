@@ -1,7 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-
 import { Container } from "@/components/ui";
 import { NAV_LINKS, NAV_SCROLL_THRESHOLD } from "@/constants/navigation";
 import { useActiveSection, useMobileMenu, useScrollPosition } from "@/hooks";
@@ -16,19 +14,13 @@ import { ResumeButton } from "./resume-button";
 const MENU_BUTTON_ID = "mobile-menu-button";
 
 export function Navbar() {
-  const pathname = usePathname();
   const isScrolled = useScrollPosition(NAV_SCROLL_THRESHOLD);
   const { isOpen, toggle, close } = useMobileMenu();
 
   const activeSection = useActiveSection();
 
-  const isLinkActive = (link: NavLink) => {
-    if (pathname !== "/") {
-      return link.href === pathname;
-    }
+  const isLinkActive = (link: NavLink) => activeSection === link.sectionId;
 
-    return activeSection === link.sectionId;
-  };
 
   return (
     <header

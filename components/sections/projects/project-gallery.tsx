@@ -55,7 +55,7 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
       </h3>
 
       {/* Gallery Grid/Scroll */}
-      <div className="relative w-full">
+      <div className="relative w-full overflow-hidden">
         <ul
           className="flex w-full gap-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-track-white/5 scrollbar-thumb-white/10 lg:grid lg:grid-cols-3 lg:overflow-x-visible lg:pb-0"
           aria-label="Project screenshots gallery"
