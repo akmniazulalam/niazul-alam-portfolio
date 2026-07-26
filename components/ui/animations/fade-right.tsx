@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useSyncExternalStore, type ReactNode } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
 interface FadeRightProps {
@@ -13,6 +13,20 @@ interface FadeRightProps {
   className?: string;
 }
 
+function subscribeMobile(callback: () => void) {
+  const media = window.matchMedia("(max-width: 767px)");
+  media.addEventListener("change", callback);
+  return () => media.removeEventListener("change", callback);
+}
+
+function getMobileSnapshot() {
+  return window.matchMedia("(max-width: 767px)").matches;
+}
+
+function getMobileServerSnapshot() {
+  return false;
+}
+
 export function FadeRight({
   children,
   delay = 0,
@@ -23,15 +37,22 @@ export function FadeRight({
   className,
 }: FadeRightProps) {
   const shouldReduceMotion = useReducedMotion();
+  const isMobile = useSyncExternalStore(
+    subscribeMobile,
+    getMobileSnapshot,
+    getMobileServerSnapshot,
+  );
 
   const variants = {
     initial: {
       opacity: 0,
-      x: shouldReduceMotion ? 0 : offset,
+      x: shouldReduceMotion || isMobile ? 0 : offset,
+      y: !shouldReduceMotion && isMobile ? offset : 0,
     },
     animate: {
       opacity: 1,
       x: 0,
+      y: 0,
       transition: {
         duration,
         delay,
@@ -42,13 +63,21 @@ export function FadeRight({
 
   return (
     <motion.div
-      initial="initial"
-      whileInView="animate"
+      initial={{
+        opacity: 0,
+        y: 20,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
       viewport={{ once, amount }}
-      variants={variants}
-      style={{ overflowX: "clip" }}
-      className={className}
-    >
+      transition={{
+        duration,
+        delay,
+        ease: [0.21, 0.47, 0.32, 0.98],
+      }}
+      className={className}>
       {children}
     </motion.div>
   );
