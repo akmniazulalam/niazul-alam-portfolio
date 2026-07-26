@@ -63,7 +63,7 @@ export const PROJECTS_DATA: ProjectsSectionData = {
       "MongoDB",
       "Mongoose",
       "Tailwind CSS",
-      "Shadcn UI",
+      "Shadcn/UI",
       "Zustand",
       "Context API",
       "JWT",

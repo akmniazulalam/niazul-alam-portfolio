@@ -27,6 +27,7 @@ import {
   SiShopify,
   SiCloudinary,
   SiFramer,
+  SiAxios
 } from "react-icons/si";
 import {
   TbHierarchy,
@@ -61,6 +62,7 @@ const iconMap: Record<string, IconType> = {
   "express": SiExpress,
   "mongodb": SiMongodb,
   "mongoose": SiMongoose,
+  "axios": SiAxios,
   "jwt": SiJsonwebtokens,
   "express session": TbLock,
   "context api": SiReact,
