@@ -53,7 +53,7 @@ export function MobileMenu({
         aria-labelledby={menuButtonId}
         aria-hidden={!isOpen}
         className={cn(
-          "fixed top-0 right-0 z-50 flex h-full w-full max-w-xs flex-col border-l border-white/10 bg-background shadow-2xl transition-transform duration-300 ease-in-out sm:max-w-sm lg:hidden",
+          "fixed top-0 right-0 z-50 flex h-full w-full max-w-xs flex-col border-l border-white/10 bg-background shadow-2xl transition-transform duration-300 ease-in-out sm:max-w-sm hidden lg:hidden",
           isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
