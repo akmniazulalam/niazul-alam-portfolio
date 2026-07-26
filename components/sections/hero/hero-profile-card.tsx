@@ -21,7 +21,7 @@ export function HeroProfileCard({
     >
       <div
         aria-hidden="true"
-        className="absolute -inset-6 rounded-4xl blur-3xl sm:-inset-8"
+        className="absolute -inset-4 rounded-4xl blur-3xl sm:-inset-6"
         style={{ backgroundColor: "rgba(135, 80, 247, 0.2)" }}
       />
 

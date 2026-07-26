@@ -46,6 +46,7 @@ export function FadeRight({
       whileInView="animate"
       viewport={{ once, amount }}
       variants={variants}
+      style={{ overflowX: "clip" }}
       className={className}
     >
       {children}
