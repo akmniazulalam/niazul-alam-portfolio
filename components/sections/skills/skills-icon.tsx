@@ -25,6 +25,8 @@ import {
   SiFigma,
   SiCursor,
   SiShopify,
+  SiCloudinary,
+  SiFramer,
 } from "react-icons/si";
 import {
   TbHierarchy,
@@ -35,6 +37,7 @@ import {
   TbDroplet,
 } from "react-icons/tb";
 import { VscVscode, VscSparkle, VscRobot } from "react-icons/vsc";
+
 
 const iconMap: Record<string, IconType> = {
   "html": SiHtml5,
@@ -55,10 +58,15 @@ const iconMap: Record<string, IconType> = {
   "zustand": TbHierarchy,
   "node.js": SiNodedotjs,
   "express.js": SiExpress,
+  "express": SiExpress,
   "mongodb": SiMongodb,
   "mongoose": SiMongoose,
   "jwt": SiJsonwebtokens,
   "express session": TbLock,
+  "context api": SiReact,
+  "cloudinary": SiCloudinary,
+  "framer motion": SiFramer,
+  "rest api": TbApi,
   "vercel": SiVercel,
   "render": SiRender,
   "git": SiGit,

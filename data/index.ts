@@ -11,4 +11,6 @@ export { EXPERIENCE_DATA } from "./experience";
 export type { ExperienceItem } from "./experience";
 export { CONTACT_DATA } from "./contact";
 export type { ContactData } from "./contact";
+export { PROJECTS_DATA } from "./projects";
+export type { ProjectsSectionData, FeaturedProject, SecondaryProject } from "./projects";
 
