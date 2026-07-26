@@ -20,7 +20,7 @@ export function Hero() {
     >
       <Container className="flex min-h-screen items-center py-16 sm:py-20 lg:py-24">
         <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
-          <header className="flex flex-col gap-6 text-center lg:text-left">
+          <header className="flex flex-col gap-6 text-center lg:text-left order-2 lg:order-1">
             <p className="font-newRocker text-sm tracking-widest text-[#ef9d7a] uppercase sm:text-base">
               {HERO_CONTENT.greeting}
             </p>
@@ -71,7 +71,7 @@ export function Hero() {
             <HeroSocialLinks className="justify-center lg:justify-start" />
           </header>
 
-          <div>
+          <div className="order-1 lg:order-2">
             <HeroProfileCard />
           </div>
         </div>
