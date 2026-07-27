@@ -55,14 +55,14 @@ export function Navbar() {
             id={MENU_BUTTON_ID}
             type="button"
             onClick={toggle}
-            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md text-inherit transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background lg:hidden"
+            className="rounded-md text-inherit transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background lg:hidden"
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label={
               isOpen ? "Close navigation menu" : "Open navigation menu"
             }>
             <span className="relative size-6">
-              <FaBarsStaggered />
+              <FaBarsStaggered className="text-xl"/>
             </span>
           </button>
         </Container>
