@@ -30,7 +30,7 @@ export function Footer() {
               className="group inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] rounded-md"
               aria-label="Niazul Alam — Back to top"
             >
-              <span className="font-newRocker text-xl tracking-wide text-blue-600 transition-colors group-hover:text-[#ef9d7a] sm:text-3xl">
+              <span className="font-newRocker text-2xl font-bold tracking-wide text-blue-600 transition-colors group-hover:text-[#ef9d7a] sm:text-3xl">
                 Niazul Alam
               </span>
             </Link>
