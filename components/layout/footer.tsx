@@ -28,10 +28,10 @@ export function Footer() {
             <Link
               href="/#home"
               className="group inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] rounded-md"
-              aria-label="A.K.M. Niazul Alam — Back to top"
+              aria-label="Niazul Alam — Back to top"
             >
-              <span className="font-newRocker text-xl tracking-wide text-text transition-colors group-hover:text-[#ef9d7a] sm:text-2xl">
-                A.K.M. Niazul Alam
+              <span className="font-newRocker text-xl tracking-wide text-blue-600 transition-colors group-hover:text-[#ef9d7a] sm:text-3xl">
+                Niazul Alam
               </span>
             </Link>
             <p className="max-w-sm font-poppins text-sm leading-relaxed text-text/70">
