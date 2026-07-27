@@ -44,7 +44,7 @@ export function BackToTop() {
           type="button"
           aria-label="Back to top"
           className={cn(
-            "fixed bottom-6 right-6 z-40 flex size-10 cursor-pointer items-center justify-center rounded-full bg-[#8852F7] text-white shadow-[0_0_20px_rgba(136,82,247,0.4)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8852F7]/95 hover:shadow-[0_0_30px_rgba(136,82,247,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] sm:bottom-8 sm:right-8 sm:size-12"
+            "fixed bottom-6 right-6 z-40 flex size-10 cursor-pointer items-center justify-center rounded-full bg-[#FF014F] text-white shadow-[0_0_20px_rgba(255,1,79,0.4)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF014F]/95 hover:shadow-[0_0_30px_rgba(255,1,79,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] sm:bottom-8 sm:right-8 sm:size-12"
           )}
         >
           <TbArrowUp className="size-5 sm:size-6" aria-hidden="true" />

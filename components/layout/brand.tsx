@@ -16,7 +16,7 @@ export function Brand({ logo, className }: BrandProps) {
     >
       <span className="inline-flex items-center">
         {logo ?? (
-          <span className="font-newRocker text-2xl font-bold text-blue-600 transition-colors group-hover:text-primary sm:text-xl lg:text-3xl">
+          <span className="font-newRocker text-2xl font-bold text-[#FF014F] transition-colors group-hover:text-[#ef9d7a] sm:text-xl lg:text-3xl">
             {SITE_CONFIG.name}
           </span>
         )}

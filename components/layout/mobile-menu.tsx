@@ -88,7 +88,7 @@ export function MobileMenu({
           >
             {/* Header Area */}
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-4 sm:px-6">
-              <h2 className="font-rajdhani text-sm font-semibold text-text">Menu</h2>
+              <h2 className="font-rajdhani text-xl font-semibold text-text">Menu</h2>
               <button
                 type="button"
                 onClick={onClose}
@@ -123,7 +123,7 @@ export function MobileMenu({
                   className={cn(
                     "w-full justify-start px-4 py-3 text-base rounded-xl transition-all [&_span]:hidden",
                     isLinkActive(link)
-                      ? "bg-primary/10 text-primary font-bold"
+                      ? "bg-[#FF014F]/10 text-[#FF014F] font-bold"
                       : "text-muted hover:text-text hover:bg-white/[0.02]"
                   )}
                 />
