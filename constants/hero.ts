@@ -8,4 +8,12 @@ export const HERO_CONTENT = {
     "Passionate MERN Stack Developer building scalable, high-performance web applications. I specialize in crafting pixel-perfect interfaces and robust full-stack solutions with React, Node.js, and MongoDB.",
 } as const;
 
+export const HERO_TYPED_ROLES = [
+  "MERN Stack Developer.",
+  "Front-End Developer.",
+  "React Developer.",
+  "Next.js Developer.",
+  "Full Stack Developer.",
+] as const;
+
 export const HERO_PROJECTS_HREF = "/#projects";

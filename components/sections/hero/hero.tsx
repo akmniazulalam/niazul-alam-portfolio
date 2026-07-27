@@ -7,6 +7,7 @@ import { cn } from "@/utils/cn";
 
 import { HeroProfileCard } from "./hero-profile-card";
 import { HeroSocialLinks } from "./hero-social-links";
+import { HeroTypedRole } from "./hero-typed-role";
 
 const focusRingStyles =
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]";
@@ -22,23 +23,19 @@ export function Hero() {
       <Container className="flex min-h-screen items-center py-16 sm:py-20 lg:py-24">
         <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
           <header className="flex flex-col gap-6 text-center lg:text-left order-2 lg:order-1">
-            <p className="font-newRocker text-sm tracking-widest text-[#ef9d7a] uppercase sm:text-base">
+            <p className="font-newRocker text-base tracking-widest text-[#ef9d7a] uppercase sm:text-base">
               {HERO_CONTENT.greeting}
             </p>
 
             <div className="space-y-3">
               <h1
                 id="hero-heading"
-                className="font-rajdhani text-4xl font-bold tracking-tight text-text sm:text-5xl lg:text-6xl xl:text-7xl"
+                className="font-rajdhani text-4xl font-bold tracking-tight text-text sm:text-5xl lg:text-6xl"
               >
                 {HERO_CONTENT.name}
               </h1>
 
-              <h2 className="font-rajdhani text-2xl font-bold sm:text-3xl lg:text-4xl">
-                <span className="bg-gradient-to-r from-[#8852F7] to-[#fdfdff] bg-clip-text text-transparent">
-                  {HERO_CONTENT.role}
-                </span>
-              </h2>
+              <HeroTypedRole />
             </div>
 
             <p className="mx-auto max-w-xl font-poppins text-base leading-relaxed text-muted sm:text-lg lg:mx-0">

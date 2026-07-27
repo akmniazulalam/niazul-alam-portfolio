@@ -29,3 +29,14 @@
     scroll-behavior: smooth;
   }
 }
+
+/* ---------------------------------------------------------------------------
+ * Typed.js Cursor Styling
+ * --------------------------------------------------------------------------- */
+
+.typed-cursor {
+  color: #FF014F;
+  font-weight: 700;
+  margin-left: 2px;
+  font-style: 72px;
+}
