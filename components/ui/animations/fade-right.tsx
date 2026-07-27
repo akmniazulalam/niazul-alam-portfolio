@@ -65,11 +65,11 @@ export function FadeRight({
     <motion.div
       initial={{
         opacity: 0,
-        y: 20,
+        x: 15,
       }}
       whileInView={{
         opacity: 1,
-        y: 0,
+        x: 0,
       }}
       viewport={{ once, amount }}
       transition={{
