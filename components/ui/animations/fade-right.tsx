@@ -43,24 +43,6 @@ export function FadeRight({
     getMobileServerSnapshot,
   );
 
-  const variants = {
-    initial: {
-      opacity: 0,
-      x: shouldReduceMotion || isMobile ? 0 : offset,
-      y: !shouldReduceMotion && isMobile ? offset : 0,
-    },
-    animate: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        duration,
-        delay,
-        ease: [0.21, 0.47, 0.32, 0.98] as [number, number, number, number],
-      },
-    },
-  };
-
   return (
     <motion.div
       initial={{
