@@ -20,9 +20,7 @@ export function HeroTypedRole() {
       backDelay: 1500,
       startDelay: 300,
       loop: true,
-      smartBackspace: false,
       showCursor: true,
-      contentType: "html",
     });
 
     return () => {
@@ -33,10 +31,10 @@ export function HeroTypedRole() {
   return (
     <h2 className="font-rajdhani text-3xl font-bold sm:text-3xl lg:text-5xl min-h-[2rem] sm:min-h-[2.25rem] lg:min-h-[2.5rem] flex items-center justify-center lg:justify-start">
       <span className="sr-only">A {HERO_TYPED_ROLES.join(", ")}</span>
-      <span aria-hidden="true" className="inline-flex items-center typed">
+      <span aria-hidden="true" className="inline-flex items-center min-w-[17ch] typed">
         <span className="text-text mr-2">A</span>
         <span ref={elRef} className="text-[#FF014F]">
-          {/* {HERO_TYPED_ROLES[0]} */}
+          {HERO_TYPED_ROLES[0]}
         </span>
       </span>
     </h2>
