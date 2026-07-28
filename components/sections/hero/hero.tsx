@@ -46,7 +46,7 @@ export function Hero() {
               <Link
                 href={HERO_PROJECTS_HREF}
                 className={cn(
-                  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#FF014F] px-7 py-3 font-poppins text-sm font-semibold text-white shadow-lg shadow-[#FF014F]/20 transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/30 active:scale-[0.98]",
+                  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#d60047] px-7 py-3 font-poppins text-sm font-semibold text-white shadow-lg shadow-[#FF014F]/20 transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/30 active:scale-[0.98]",
                   focusRingStyles,
                 )}
               >

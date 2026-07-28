@@ -27,7 +27,7 @@ import {
   SiShopify,
   SiCloudinary,
   SiFramer,
-  SiAxios
+  SiAxios,
 } from "react-icons/si";
 import {
   TbHierarchy,
@@ -39,51 +39,50 @@ import {
 } from "react-icons/tb";
 import { VscVscode, VscSparkle, VscRobot } from "react-icons/vsc";
 
-
 const iconMap: Record<string, IconType> = {
-  "html": SiHtml5,
-  "html5": SiHtml5,
-  "css": SiCss,
-  "css3": SiCss,
+  html: SiHtml5,
+  html5: SiHtml5,
+  css: SiCss,
+  css3: SiCss,
   "javascript (es6+)": SiJavascript,
-  "javascript": SiJavascript,
-  "typescript": SiTypescript,
-  "jquery": SiJquery,
-  "react": SiReact,
+  javascript: SiJavascript,
+  typescript: SiTypescript,
+  jquery: SiJquery,
+  react: SiReact,
   "next.js": SiNextdotjs,
   "tailwind css": SiTailwindcss,
-  "bootstrap": SiBootstrap,
+  bootstrap: SiBootstrap,
   "shadcn/ui": SiShadcnui,
-  "daisyui": SiDaisyui,
+  daisyui: SiDaisyui,
   "redux toolkit": SiRedux,
-  "zustand": TbHierarchy,
+  zustand: TbHierarchy,
   "node.js": SiNodedotjs,
   "express.js": SiExpress,
-  "express": SiExpress,
-  "mongodb": SiMongodb,
-  "mongoose": SiMongoose,
-  "axios": SiAxios,
-  "jwt": SiJsonwebtokens,
+  express: SiExpress,
+  mongodb: SiMongodb,
+  mongoose: SiMongoose,
+  axios: SiAxios,
+  jwt: SiJsonwebtokens,
   "express session": TbLock,
   "context api": SiReact,
-  "cloudinary": SiCloudinary,
+  cloudinary: SiCloudinary,
   "framer motion": SiFramer,
   "rest api": TbApi,
-  "vercel": SiVercel,
-  "render": SiRender,
-  "git": SiGit,
-  "github": SiGithub,
+  vercel: SiVercel,
+  render: SiRender,
+  git: SiGit,
+  github: SiGithub,
   "vs code": VscVscode,
-  "postman": SiPostman,
-  "figma": SiFigma,
-  "cursor": SiCursor,
-  "codex": VscSparkle,
-  "antigravity": VscRobot,
+  postman: SiPostman,
+  figma: SiFigma,
+  cursor: SiCursor,
+  codex: VscSparkle,
+  antigravity: VscRobot,
   "rest api integration": TbApi,
   "responsive web design": TbDeviceLaptop,
   "basic seo": TbSearch,
-  "shopify": SiShopify,
-  "liquid": TbDroplet,
+  shopify: SiShopify,
+  liquid: TbDroplet,
 };
 
 type SkillsIconProps = {
@@ -94,5 +93,5 @@ type SkillsIconProps = {
 export function SkillsIcon({ name, className }: SkillsIconProps) {
   const Icon = iconMap[name.toLowerCase()];
   if (!Icon) return null;
-  return <Icon className={className} />;
+  return <Icon className={className} aria-hidden="true" focusable="false" />;
 }
