@@ -33,6 +33,7 @@ export function HeroProfileCard({
               alt={imageAlt}
               fill
               priority
+              fetchPriority="high"
               sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1280px) 448px, 512px"
               className="object-cover"
             />
