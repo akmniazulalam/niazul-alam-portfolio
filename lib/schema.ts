@@ -14,19 +14,23 @@ export const personSchema = {
 
   description: SITE_CONFIG.description,
 
-   sameAs: [
+  sameAs: [
     "https://github.com/akmniazulalam",
     "https://www.linkedin.com/in/akmniazulalam",
     "https://www.facebook.com/akmniazulalam",
   ],
 
   knowsAbout: [
+    "JavaScript",
+    "TypeScript",
     "React",
     "Next.js",
-    "TypeScript",
     "Node.js",
     "Express.js",
     "MongoDB",
     "Tailwind CSS",
+    "REST API",
+    "Git",
+    "GitHub",
   ],
 };
