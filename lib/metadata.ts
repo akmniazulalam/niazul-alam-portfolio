@@ -37,6 +37,8 @@ export const metadata: Metadata = {
   creator: SITE_CONFIG.name,
   publisher: SITE_CONFIG.name,
 
+  category: "Technology",
+
   alternates: {
     canonical: "/",
   },
@@ -52,7 +54,7 @@ export const metadata: Metadata = {
         url: SITE_CONFIG.ogImage,
         width: 1200,
         height: 630,
-        alt: "Niazul Alam Portfolio",
+        alt: "Niazul Alam - MERN Stack Developer Portfolio",
       },
     ],
 
@@ -68,7 +70,14 @@ export const metadata: Metadata = {
   },
 
   robots: {
+  index: true,
+  follow: true,
+  googleBot: {
     index: true,
     follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
   },
+},
 };
