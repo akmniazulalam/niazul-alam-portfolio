@@ -1,6 +1,7 @@
 import { Navbar, Footer, BackToTop } from "@/components/layout";
 import { fontVariables } from "@/lib/fonts";
 import { metadata } from "@/lib/metadata";
+import { personSchema } from "@/lib/schema";
 import { cn } from "@/utils/cn";
 
 import "./globals.css";
@@ -15,9 +16,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(fontVariables, "h-full antialiased scroll-smooth")}
-    >
+      className={cn(fontVariables, "h-full antialiased scroll-smooth")}>
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
+          }}
+        />
         <Navbar />
         <main id="main-content" className="flex-1">
           {children}
