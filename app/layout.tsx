@@ -3,6 +3,7 @@ import { fontVariables } from "@/lib/fonts";
 import { metadata } from "@/lib/metadata";
 import { personSchema } from "@/lib/schema";
 import { cn } from "@/utils/cn";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -18,7 +19,8 @@ export default function RootLayout({
       lang="en"
       className={cn(fontVariables, "h-full antialiased scroll-smooth")}>
       <body className="min-h-full flex flex-col">
-        <script
+        <Script
+          id="person-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(personSchema),
