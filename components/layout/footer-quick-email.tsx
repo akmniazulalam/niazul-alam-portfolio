@@ -77,7 +77,7 @@ export function FooterQuickEmail() {
             <button
               type="submit"
               aria-label="Send email inquiry"
-              className="inline-flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-lg text-text/60 transition-all duration-300 hover:scale-110 hover:text-[#8852F7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7]">
+              className="inline-flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-lg text-text/60 transition-all duration-300 hover:scale-110 hover:text-[#8852F7] active:scale-105 active:text-[#8852F7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7]">
               <TbSend className="size-4" />
             </button>
           </div>
