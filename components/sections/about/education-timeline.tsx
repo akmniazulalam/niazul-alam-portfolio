@@ -21,7 +21,7 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
         aria-hidden="true"
         className={cn(
           "absolute left-[0.9375rem] top-6 z-10 size-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0a0909] transition-colors duration-300",
-          "group-hover:border-[#ef9d7a]",
+          "group-hover:border-[#ef9d7a] group-active:border-[#ef9d7a]",
         )}
       />
 
@@ -36,7 +36,7 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
           <article
             className={cn(
               "relative ml-8 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition-all duration-300 sm:p-5",
-              "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
+              "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:bg-white/[0.04] active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
             )}>
             <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
               <h4 className="font-rajdhani text-lg font-bold text-text sm:text-xl">
