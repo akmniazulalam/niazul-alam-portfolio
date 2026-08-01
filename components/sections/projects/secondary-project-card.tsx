@@ -16,9 +16,9 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
 
   return (
     <StaggerItem className="h-full">
-      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] transition-all duration-500 hover:-translate-y-1 hover:border-[#8852F7]/30 hover:shadow-[0_0_30px_rgba(135,80,247,0.15)] shadow-lg">
+      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] transition-all duration-500 hover:-translate-y-1 hover:border-[#8852F7]/30 hover:shadow-[0_0_30px_rgba(135,80,247,0.15)] active:-translate-y-1 active:border-[#8852F7]/30 active:shadow-[0_0_30px_rgba(135,80,247,0.15)] shadow-lg">
         {/* Subtle overlay card background gradient */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-[#8852F7]/[0.01] via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-[#8852F7]/[0.01] via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-active:opacity-100" />
 
         {/* ── Card Header: Image & Badge ─────────────────────────────── */}
         <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-white/5 bg-white/[0.01]">
@@ -27,7 +27,7 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
             alt={project.title}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover transition-transform duration-700 group-hover:scale-103"
+            className="object-cover transition-transform duration-700 group-hover:scale-103 group-active:scale-103"
             loading="lazy"
           />
 
@@ -55,7 +55,7 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
                 <li key={tech}>
                   <span
                     tabIndex={0}
-                    className={`inline-flex items-center gap-1 rounded-lg border border-white/5 bg-white/[0.01] px-2 py-0.5 font-poppins text-[10px] font-medium text-text/60 hover:text-text hover:border-[#8852F7]/30 hover:bg-[#8852F7]/5 transition-colors duration-300 ${focusRing}`}
+                    className={`inline-flex items-center gap-1 rounded-lg border border-white/5 bg-white/[0.01] px-2 py-0.5 font-poppins text-[10px] font-medium text-text/60 hover:text-text hover:border-[#8852F7]/30 hover:bg-[#8852F7]/5 active:text-text active:border-[#8852F7]/30 active:bg-[#8852F7]/5 transition-colors duration-300 ${focusRing}`}
                   >
                     <SkillsIcon name={tech} className="size-2.5 text-text/40" />
                     <span>{tech}</span>

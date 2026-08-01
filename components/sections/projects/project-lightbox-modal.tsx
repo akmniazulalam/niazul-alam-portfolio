@@ -82,7 +82,7 @@ export function ProjectLightboxModal({
             <button
               type="button"
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className="absolute top-4 right-4 z-10 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-105 active:bg-white/30 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               aria-label="Close full view"
             >
               <TbX className="size-6" />
@@ -94,7 +94,7 @@ export function ProjectLightboxModal({
                 <button
                   type="button"
                   onClick={onPrev}
-                  className="absolute left-4 top-1/2 z-10 -translate-y-1/2 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="absolute left-4 top-1/2 z-10 -translate-y-1/2 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-105 active:bg-white/30 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                   aria-label="Previous screenshot"
                 >
                   <TbChevronLeft className="size-6" />
@@ -103,7 +103,7 @@ export function ProjectLightboxModal({
                 <button
                   type="button"
                   onClick={onNext}
-                  className="absolute right-4 top-1/2 z-10 -translate-y-1/2 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="absolute right-4 top-1/2 z-10 -translate-y-1/2 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-105 active:bg-white/30 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                   aria-label="Next screenshot"
                 >
                   <TbChevronRight className="size-6" />
