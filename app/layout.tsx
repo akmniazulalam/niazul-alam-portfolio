@@ -1,4 +1,5 @@
 import { Navbar, Footer, BackToTop } from "@/components/layout";
+import { TouchPressManager } from "@/components/ui/touch-press-manager";
 import { fontVariables } from "@/lib/fonts";
 import { metadata } from "@/lib/metadata";
 import { personSchema } from "@/lib/schema";
@@ -19,6 +20,7 @@ export default function RootLayout({
       lang="en"
       className={cn(fontVariables, "h-full antialiased scroll-smooth")}>
       <body className="min-h-full flex flex-col">
+        <TouchPressManager />
         <Script
           id="person-schema"
           type="application/ld+json"
