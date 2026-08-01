@@ -14,16 +14,16 @@ type AboutFeatureCardProps = {
 
 const cardStyles: Record<AboutFeatureCardVariant, string> = {
   default:
-    "border-white/10 bg-white/[0.02] hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] focus-visible:border-[#8852F7]/40 focus-visible:bg-white/[0.04]",
+    "border-white/10 bg-white/[0.02] hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:border-[#8852F7]/40 active:bg-white/[0.04] active:shadow-[0_0_30px_rgba(135,80,247,0.2)] focus-visible:border-[#8852F7]/40 focus-visible:bg-white/[0.04]",
   highlight:
-    "border-[#FF014F]/25 bg-[#FF014F]/5 shadow-lg shadow-[#FF014F]/5 hover:border-[#ef9d7a]/50 hover:bg-[#FF014F]/10 hover:shadow-[0_0_30px_rgba(255,1,79,0.25)] focus-visible:border-[#ef9d7a]/50 focus-visible:bg-[#FF014F]/10",
+    "border-[#FF014F]/25 bg-[#FF014F]/5 shadow-lg shadow-[#FF014F]/5 hover:border-[#ef9d7a]/50 hover:bg-[#FF014F]/10 hover:shadow-[0_0_30px_rgba(255,1,79,0.25)] active:border-[#ef9d7a]/50 active:bg-[#FF014F]/10 active:shadow-[0_0_30px_rgba(255,1,79,0.25)] focus-visible:border-[#ef9d7a]/50 focus-visible:bg-[#FF014F]/10",
 };
 
 const iconStyles: Record<AboutFeatureCardVariant, string> = {
   default:
-    "border-[#8852F7]/30 bg-[#8852F7]/10 text-[#ef9d7a] group-hover:border-[#ef9d7a]/50 group-focus-visible:border-[#ef9d7a]/50",
+    "border-[#8852F7]/30 bg-[#8852F7]/10 text-[#ef9d7a] group-hover:border-[#ef9d7a]/50 group-active:border-[#ef9d7a]/50 group-focus-visible:border-[#ef9d7a]/50",
   highlight:
-    "border-[#FF014F]/40 bg-[#FF014F]/15 text-[#ef9d7a] group-hover:border-[#ef9d7a]/60 group-focus-visible:border-[#ef9d7a]/60",
+    "border-[#FF014F]/40 bg-[#FF014F]/15 text-[#ef9d7a] group-hover:border-[#ef9d7a]/60 group-active:border-[#ef9d7a]/60 group-focus-visible:border-[#ef9d7a]/60",
 };
 
 function getCardId(title: string) {
@@ -55,7 +55,7 @@ export function AboutFeatureCard({
       tabIndex={0}
       aria-labelledby={headingId}
       className={cn(
-        "group h-full rounded-xl border p-4 transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] sm:p-5",
+        "group h-full rounded-xl border p-4 transition-all duration-300 hover:-translate-y-1 active:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] sm:p-5",
         cardStyles[variant],
         className,
       )}

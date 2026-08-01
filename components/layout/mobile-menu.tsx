@@ -92,7 +92,7 @@ export function MobileMenu({
               <button
                 type="button"
                 onClick={onClose}
-                className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md text-muted transition-colors hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md text-muted transition-colors hover:text-text active:text-text active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 aria-label="Close navigation menu"
               >
                 <svg
@@ -124,7 +124,7 @@ export function MobileMenu({
                     "w-full justify-start px-4 py-3 text-base rounded-xl transition-all [&_span]:hidden",
                     isLinkActive(link)
                       ? "bg-[#FF014F]/10 text-[#FF014F] font-bold"
-                      : "text-muted hover:text-text hover:bg-white/[0.02]"
+                      : "text-muted hover:text-text hover:bg-white/[0.02] active:text-text active:bg-white/[0.04]"
                   )}
                 />
               ))}
