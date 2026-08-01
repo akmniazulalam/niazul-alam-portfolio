@@ -23,13 +23,13 @@ export function ExperienceCard({ item, className }: ExperienceCardProps) {
     <article
       className={cn(
         "group rounded-2xl border border-white/10 bg-white/[0.02] p-5 shadow-sm shadow-black/10 transition-all duration-300 sm:p-6",
-        "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
+        "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:bg-white/[0.04] active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
         className,
       )}
     >
       <div className="mb-5 flex items-start gap-4">
         <div
-          className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-[#8852F7]/10 transition-colors duration-300 group-hover:border-[#8852F7]/40 sm:size-14"
+          className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-[#8852F7]/10 transition-colors duration-300 group-hover:border-[#8852F7]/40 group-active:border-[#8852F7]/40 sm:size-14"
           aria-hidden={item.logoSrc ? undefined : true}
         >
           {item.logoSrc ? (
@@ -99,7 +99,7 @@ export function ExperienceCard({ item, className }: ExperienceCardProps) {
           <ul className="flex flex-wrap gap-2" aria-label="Technologies used">
             {item.technologies.map((technology) => (
               <li key={technology}>
-                <span className="inline-block rounded-full border border-[#8852F7]/30 bg-[#8852F7]/10 px-3 py-1 font-poppins text-xs font-medium text-text transition-colors duration-300 group-hover:border-[#8852F7]/50 sm:text-sm">
+                <span className="inline-block rounded-full border border-[#8852F7]/30 bg-[#8852F7]/10 px-3 py-1 font-poppins text-xs font-medium text-text transition-colors duration-300 group-hover:border-[#8852F7]/50 group-active:border-[#8852F7]/50 sm:text-sm">
                   {technology}
                 </span>
               </li>
