@@ -6,7 +6,7 @@ type ResumeButtonProps = {
 };
 
 const resumeButtonStyles =
-  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#D60047] px-5 py-2.5 font-poppins text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.98]";
+  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#D60047] px-5 py-2.5 font-poppins text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-md active:bg-[#FF014F]/90 active:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF014F] focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.98]";
 
 export function ResumeButton({ className }: ResumeButtonProps) {
   return (

@@ -37,7 +37,7 @@ export function Footer() {
               href="/#home"
               className="group inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] rounded-md"
               aria-label="Niazul Alam — Back to top">
-              <span className="font-newRocker text-2xl font-bold tracking-wide text-[#FF014F] transition-colors group-hover:text-[#ef9d7a] sm:text-3xl">
+              <span className="font-newRocker text-2xl font-bold tracking-wide text-[#FF014F] transition-colors group-hover:text-[#ef9d7a] group-active:text-[#ef9d7a] sm:text-3xl">
                 Niazul Alam
               </span>
             </Link>
@@ -78,7 +78,7 @@ export function Footer() {
                     <StaggerItem>
                       <Link
                         href={`/#${link.sectionId}`}
-                        className="text-text/75 transition-colors duration-300 hover:text-[#ef9d7a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] focus-visible:rounded">
+                        className="text-text/75 transition-colors duration-300 hover:text-[#ef9d7a] active:text-[#ef9d7a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709] focus-visible:rounded">
                         {link.label}
                       </Link>
                     </StaggerItem>
@@ -112,7 +112,7 @@ export function Footer() {
                             aria-label={link.label}
                             target={isExternal ? "_blank" : undefined}
                             rel={isExternal ? "noopener noreferrer" : undefined}
-                            className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 text-muted transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.03] hover:text-[#ef9d7a] hover:shadow-[0_0_15px_rgba(136,82,247,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709]">
+                            className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-white/10 text-muted transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.03] hover:text-[#ef9d7a] hover:shadow-[0_0_15px_rgba(136,82,247,0.15)] active:-translate-y-0.5 active:border-[#8852F7]/40 active:bg-white/[0.03] active:text-[#ef9d7a] active:shadow-[0_0_15px_rgba(136,82,247,0.15)] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050709]">
                             <Icon />
                           </a>
                         </StaggerItem>
