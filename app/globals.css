@@ -32,6 +32,19 @@
 }
 
 /* ---------------------------------------------------------------------------
+ * Touch Press Variants
+ * Allows hover: and group-hover: classes to automatically respond to
+ * touch-and-hold (data-pressed="true" / data-group-pressed="true")
+ * set by TouchPressManager on mobile touch devices.
+ * --------------------------------------------------------------------------- */
+
+@variant hover (&:hover, &[data-pressed="true"]);
+@variant group-hover (.group:hover &, .group[data-group-pressed="true"] &);
+
+
+
+
+/* ---------------------------------------------------------------------------
  * Typed.js Cursor Styling
  * --------------------------------------------------------------------------- */
 
