@@ -92,7 +92,7 @@ export function HeroSocialLinks({ className }: HeroSocialLinksProps) {
               rel={isExternal ? "noopener noreferrer" : undefined}
               className={cn(
                 socialIconStyles,
-                "cursor-pointer hover:border-[#ef9d7a]/50 hover:text-[#ef9d7a] hover:bg-white/[0.03] hover:shadow-[0_0_15px_rgba(239,157,122,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+                "cursor-pointer hover:border-[#ef9d7a]/50 hover:text-[#ef9d7a] hover:bg-white/[0.03] hover:shadow-[0_0_15px_rgba(239,157,122,0.15)] active:border-[#ef9d7a]/50 active:text-[#ef9d7a] active:bg-white/[0.03] active:shadow-[0_0_15px_rgba(239,157,122,0.15)] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
               )}
             >
               <Icon />
