@@ -44,13 +44,13 @@ export function ExperienceCard() {
       {/* Timeline node */}
       <div
         aria-hidden="true"
-        className="absolute left-4 sm:left-6 md:left-8 top-6 sm:top-8 z-10 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0f0715] transition-all duration-300 group-hover/timeline:border-[#ef9d7a] group-hover/timeline:scale-110 group-hover/timeline:shadow-[0_0_15px_rgba(239,157,122,0.5)]"
+        className="absolute left-4 sm:left-6 md:left-8 top-6 sm:top-8 z-10 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0f0715] transition-all duration-300 group-hover/timeline:border-[#ef9d7a] group-hover/timeline:scale-110 group-hover/timeline:shadow-[0_0_15px_rgba(239,157,122,0.5)] group-active/timeline:border-[#ef9d7a] group-active/timeline:scale-110 group-active/timeline:shadow-[0_0_15px_rgba(239,157,122,0.5)]"
       />
 
       <FadeRight>
         <article
           aria-labelledby="experience-job-heading"
-          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
+          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
         >
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
               
@@ -97,11 +97,11 @@ export function ExperienceCard() {
                           <StaggerItem>
                             <span
                               tabIndex={0}
-                              className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 bg-white/[0.02] px-3 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] group"
+                              className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 bg-white/[0.02] px-3 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text active:-translate-y-0.5 active:border-[#8852F7]/50 active:bg-[#8852F7]/10 active:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] group"
                             >
                               <SkillsIcon
                                 name={tech}
-                                className="size-3.5 shrink-0 text-text/60 transition-all duration-300 group-hover:scale-110 group-hover:text-[#8852F7] group-focus-visible:scale-110 group-focus-visible:text-[#8852F7]"
+                                className="size-3.5 shrink-0 text-text/60 transition-all duration-300 group-hover:scale-110 group-hover:text-[#8852F7] group-active:scale-110 group-active:text-[#8852F7] group-focus-visible:scale-110 group-focus-visible:text-[#8852F7]"
                               />
                               <span>{tech}</span>
                             </span>
@@ -126,12 +126,12 @@ export function ExperienceCard() {
                         <StaggerItem>
                           <div
                             tabIndex={0}
-                            className="group flex items-start gap-3.5 rounded-xl bg-white/[0.01] border border-white/[0.03] px-4 py-3 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+                            className="group flex items-start gap-3.5 rounded-xl bg-white/[0.01] border border-white/[0.03] px-4 py-3 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 active:bg-white/[0.03] active:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
                           >
-                            <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-xs text-[#ef9d7a] transition-all duration-300 group-hover:bg-[#ef9d7a]/20 group-focus-visible:bg-[#ef9d7a]/20">
+                            <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-xs text-[#ef9d7a] transition-all duration-300 group-hover:bg-[#ef9d7a]/20 group-active:bg-[#ef9d7a]/20 group-focus-visible:bg-[#ef9d7a]/20">
                               <TbCheck aria-hidden="true" className="size-3" />
                             </span>
-                            <span className="font-poppins text-sm leading-relaxed text-text/75 transition-colors duration-300 group-hover:text-text group-focus-visible:text-text">
+                            <span className="font-poppins text-sm leading-relaxed text-text/75 transition-colors duration-300 group-hover:text-text group-active:text-text group-focus-visible:text-text">
                               {formatTextWithHighlights(resp)}
                             </span>
                           </div>
