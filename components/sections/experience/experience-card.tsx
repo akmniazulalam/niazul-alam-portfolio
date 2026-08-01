@@ -34,7 +34,7 @@ export function ExperienceCard() {
   const { experience } = EXPERIENCE_DATA;
 
   return (
-    <div className="relative pl-8 sm:pl-12 md:pl-16 group/timeline">
+    <div className="relative pl-8 sm:pl-12 md:pl-16 group">
       {/* Timeline line */}
       <div
         aria-hidden="true"
@@ -44,7 +44,7 @@ export function ExperienceCard() {
       {/* Timeline node */}
       <div
         aria-hidden="true"
-        className="absolute left-4 sm:left-6 md:left-8 top-6 sm:top-8 z-10 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0f0715] transition-all duration-300 group-hover/timeline:border-[#ef9d7a] group-hover/timeline:scale-110 group-hover/timeline:shadow-[0_0_15px_rgba(239,157,122,0.5)] group-active/timeline:border-[#ef9d7a] group-active/timeline:scale-110 group-active/timeline:shadow-[0_0_15px_rgba(239,157,122,0.5)]"
+        className="absolute left-4 sm:left-6 md:left-8 top-6 sm:top-8 z-10 size-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0f0715] transition-all duration-300 group-hover:border-[#ef9d7a] group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(239,157,122,0.5)] active:border-[#ef9d7a] active:scale-110 active:shadow-[0_0_15px_rgba(239,157,122,0.5)]"
       />
 
       <FadeRight>
