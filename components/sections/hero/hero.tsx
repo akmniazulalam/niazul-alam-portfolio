@@ -46,7 +46,7 @@ export function Hero() {
               <Link
                 href={HERO_PROJECTS_HREF}
                 className={cn(
-                  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#d60047] px-7 py-3 font-poppins text-sm font-semibold text-white shadow-lg shadow-[#FF014F]/20 transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/30 active:scale-[0.98]",
+                  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#d60047] px-7 py-3 font-poppins text-sm font-semibold text-white shadow-lg shadow-[#FF014F]/20 transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/30 active:bg-[#FF014F]/90 active:shadow-[#FF014F]/30 active:scale-[0.98]",
                   focusRingStyles,
                 )}
               >
@@ -58,7 +58,7 @@ export function Hero() {
                 download
                 aria-label="Download resume (PDF)"
                 className={cn(
-                  "inline-flex min-h-11 items-center justify-center rounded-full border border-[#ef9d7a]/50 bg-transparent px-7 py-3 font-poppins text-sm font-semibold text-text transition-all duration-300 hover:border-[#ef9d7a] hover:bg-[#ef9d7a]/10 active:scale-[0.98]",
+                  "inline-flex min-h-11 items-center justify-center rounded-full border border-[#ef9d7a]/50 bg-transparent px-7 py-3 font-poppins text-sm font-semibold text-text transition-all duration-300 hover:border-[#ef9d7a] hover:bg-[#ef9d7a]/10 active:border-[#ef9d7a] active:bg-[#ef9d7a]/10 active:scale-[0.98]",
                   focusRingStyles,
                 )}
               >

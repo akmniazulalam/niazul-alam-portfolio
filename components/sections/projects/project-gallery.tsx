@@ -50,7 +50,7 @@ export function ProjectGallery({ images }: ProjectGalleryProps) {
               <button
                 type="button"
                 onClick={() => setActiveImageIndex(index)}
-                className="group relative block aspect-[16/10] w-full overflow-hidden rounded-2xl border border-white/5 bg-white/[0.01] shadow-md transition-all duration-300 hover:border-[#8852F7]/30 hover:shadow-[0_0_20px_rgba(135,80,247,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] cursor-pointer"
+                className="group relative block aspect-[16/10] w-full overflow-hidden rounded-2xl border border-white/5 bg-white/[0.01] shadow-md transition-all duration-300 hover:border-[#8852F7]/30 hover:shadow-[0_0_20px_rgba(135,80,247,0.15)] active:border-[#8852F7]/30 active:shadow-[0_0_20px_rgba(135,80,247,0.15)] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] cursor-pointer"
                 aria-label={`Open screenshot ${index + 1} of ${images.length} in full screen`}
               >
                 <Image
