@@ -53,7 +53,7 @@ export const PROJECTS_DATA: ProjectsSectionData = {
   featured: {
     title: "MERN E-Commerce Platform",
     subtitle: "Complete Full-Stack E-Commerce Solution",
-    image: "/projects/admin-dashboard/cover/orebi-home-dark.png",
+    image: "/projects/admin-dashboard/cover/orebi-home.png",
     description:
       "A comprehensive, production-ready e-commerce ecosystem consisting of a highly responsive Customer Storefront (Orebi), a feature-rich Admin Dashboard, and a secure Express backend. This platform models end-to-end business operations rather than isolated CRUD pages, featuring advanced state synchronization, secure transaction flows, and dynamic catalog rendering.",
     techStack: [
