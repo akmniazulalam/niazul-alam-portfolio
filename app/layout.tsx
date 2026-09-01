@@ -19,7 +19,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(fontVariables, "h-full antialiased scroll-smooth")}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" cz-shortcut-listen="true">
         <TouchPressManager />
         <Script
           id="person-schema"
