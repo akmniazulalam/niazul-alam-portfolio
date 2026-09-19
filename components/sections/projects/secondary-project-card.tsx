@@ -21,7 +21,7 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
         <div className="absolute inset-0 -z-10 bg-linear-to-tr from-[#8852F7]/1 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-active:opacity-100" />
 
         {/* ── Card Header: Image & Badge ─────────────────────────────── */}
-        <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-white/5 bg-white/1">
+        <div className="relative aspect-16/10 w-full overflow-hidden border-b border-white/5 bg-white/1">
           <Image
             src={project.image}
             alt={project.title}
