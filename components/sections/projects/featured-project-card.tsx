@@ -64,7 +64,7 @@ export function FeaturedProjectCard({
                         key={link.label}
                         type="button"
                         disabled
-                        className="inline-flex min-h-11 cursor-not-allowed items-center justify-center gap-2 rounded-xl border border-white/5 bg-white/[0.02] px-5 py-2.5 font-poppins text-xs font-semibold text-text/30"
+                        className="inline-flex min-h-11 cursor-not-allowed items-center justify-center gap-2 rounded-xl border border-white/5 bg-white/2 px-5 py-2.5 font-poppins text-xs font-semibold text-text/30"
                         aria-label={`${link.label} (Private repository)`}
                       >
                         <TbLock className="size-4" />
