@@ -128,6 +128,7 @@ export const PROJECTS_DATA: ProjectsSectionData = {
         "TypeScript",
         "NestJS",
         "PostgreSQL",
+        "JWT",
         "Prisma",
         "OpenAI",
         "Docker",
