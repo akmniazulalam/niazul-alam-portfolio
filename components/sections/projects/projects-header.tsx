@@ -16,7 +16,7 @@ export function ProjectsHeader({ className }: { className?: string }) {
 
         <h2
           id="projects-heading"
-          className="font-rajdhani text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8852F7] to-[#fdfdff] sm:text-4xl lg:text-5xl tracking-tight"
+          className="font-rajdhani text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#8852F7] to-[#fdfdff] sm:text-4xl lg:text-5xl tracking-tight"
         >
           {section.title}
         </h2>
