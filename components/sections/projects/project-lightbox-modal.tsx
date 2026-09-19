@@ -7,6 +7,8 @@ import { useReducedMotion, motion, AnimatePresence } from "framer-motion";
 
 type ProjectLightboxModalProps = {
   readonly images: readonly string[];
+  readonly altTexts?: readonly string[];
+  readonly projectTitle?: string;
   readonly activeImageIndex: number | null;
   readonly onClose: () => void;
   readonly onNext: () => void;
@@ -15,6 +17,8 @@ type ProjectLightboxModalProps = {
 
 export function ProjectLightboxModal({
   images,
+  altTexts,
+  projectTitle,
   activeImageIndex,
   onClose,
   onNext,
@@ -45,6 +49,12 @@ export function ProjectLightboxModal({
     };
   }, [activeImageIndex, onClose, onNext, onPrev]);
 
+  const currentAlt =
+    activeImageIndex !== null
+      ? altTexts?.[activeImageIndex] ??
+        `${projectTitle ?? "Screenshot"} ${activeImageIndex + 1} full view`
+      : "";
+
   return (
     <AnimatePresence>
       {activeImageIndex !== null && (
@@ -55,7 +65,7 @@ export function ProjectLightboxModal({
           transition={{ duration: shouldReduceMotion ? 0.1 : 0.25 }}
           role="dialog"
           aria-modal="true"
-          aria-label="Image screenshot viewer"
+          aria-label={`${projectTitle ?? "Image"} screenshot viewer`}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-md"
         >
           {/* Close trigger overlay */}
@@ -70,7 +80,7 @@ export function ProjectLightboxModal({
             <div className="relative aspect-[16/10] w-full max-h-[80vh] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
               <Image
                 src={images[activeImageIndex]}
-                alt={`Screenshot ${activeImageIndex + 1} full view`}
+                alt={currentAlt}
                 fill
                 sizes="100vw"
                 className="object-contain"
