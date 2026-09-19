@@ -77,7 +77,7 @@ export function ProjectLightboxModal({
 
           {/* Container */}
           <div className="relative flex h-full w-full max-w-5xl flex-col items-center justify-center gap-4">
-            <div className="relative aspect-[16/10] w-full max-h-[80vh] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div className="relative aspect-16/10 w-full max-h-[80vh] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
               <Image
                 src={images[activeImageIndex]}
                 alt={currentAlt}
