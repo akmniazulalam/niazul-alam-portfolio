@@ -24,9 +24,9 @@ export function FeaturedProjectCard({
     <div className="space-y-10 sm:space-y-12">
       {/* Main Project Card Container */}
       <FadeUp amount={0.38}>
-        <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8 lg:p-10 transition-all duration-500 hover:border-[#8852F7]/30 hover:shadow-[0_0_50px_rgba(135,80,247,0.15)] active:border-[#8852F7]/30 active:shadow-[0_0_50px_rgba(135,80,247,0.15)] shadow-xl">
+        <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/2 p-6 sm:p-8 lg:p-10 transition-all duration-500 hover:border-[#8852F7]/30 hover:shadow-[0_0_50px_rgba(135,80,247,0.15)] active:border-[#8852F7]/30 active:shadow-[0_0_50px_rgba(135,80,247,0.15)] shadow-xl">
           {/* Subtle overlay card background gradient */}
-          <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-[#8852F7]/[0.02] via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-active:opacity-100" />
+          <div className="absolute inset-0 -z-10 bg-linear-to-tr from-[#8852F7]/2 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-active:opacity-100" />
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
             {/* ── Visual Assets ────────────────────────────── */}
@@ -36,7 +36,7 @@ export function FeaturedProjectCard({
                 isReversed && "lg:order-2",
               )}
             >
-              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-white/10 shadow-lg">
+              <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl border border-white/10 shadow-lg">
                 <Image
                   src={project.image}
                   alt={`${project.title} overview screenshot`}
@@ -82,8 +82,8 @@ export function FeaturedProjectCard({
                       className={cn(
                         `inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-2.5 font-poppins text-xs font-semibold transition-all duration-300 ${focusRing}`,
                         isPrimary
-                          ? "bg-[#FF014F] text-white shadow-lg shadow-[#FF014F]/10 hover:-translate-y-0.5 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/20 active:translate-y-0 active:scale-[0.98]"
-                          : "border border-white/10 bg-white/[0.02] text-text hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/20 active:translate-y-0 active:scale-[0.98]",
+                          ? "bg-primary text-white shadow-lg shadow-primary/10 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-primary/20 active:translate-y-0 active:scale-[0.98]"
+                          : "border border-white/10 bg-white/2 text-text hover:-translate-y-0.5 hover:bg-white/6 hover:border-white/20 active:translate-y-0 active:scale-[0.98]",
                       )}
                       aria-label={
                         isGithub
