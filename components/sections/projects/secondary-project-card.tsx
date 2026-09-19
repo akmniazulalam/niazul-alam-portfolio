@@ -45,7 +45,7 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
               {project.title}
             </h3>
             
-            <p className="font-poppins text-xs leading-relaxed text-text/70 min-h-[60px]">
+            <p className="font-poppins text-xs leading-relaxed text-text/70 min-h-15">
               {project.description}
             </p>
 
