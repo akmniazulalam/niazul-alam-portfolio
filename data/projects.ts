@@ -43,9 +43,9 @@ export type ProjectsSectionData = {
 export const PROJECTS_DATA: ProjectsSectionData = {
   section: {
     eyebrow: "Featured Projects",
-    title: "Innovative Solutions Built with Modern Tech",
+    title: "Production-Ready Projects Built to Solve Real Problems",
     description:
-      "A collection of professional projects showcasing modern frontend development, full-stack architecture, and real client work.",
+      "A collection of full-stack applications, SaaS products, and client projects showcasing modern web development and real-world product engineering.",
   },
   featured: [
     {
@@ -147,6 +147,11 @@ export const PROJECTS_DATA: ProjectsSectionData = {
         "Usage & Subscription Management",
       ],
       links: [
+        {
+          label: "Live Demo",
+          href: "https://support-ai-web-eosin.vercel.app/",
+          icon: "live",
+        },
         {
           label: "GitHub",
           href: "https://github.com/akmniazulalam/support-ai",
