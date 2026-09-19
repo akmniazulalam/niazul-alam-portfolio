@@ -11,7 +11,7 @@ export function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="scroll-mt-16 bg-gradient-to-b from-[#1c0d28] to-[#0a0909] lg:scroll-mt-20"
+      className="scroll-mt-16 bg-linear-to-b from-[#1c0d28] to-[#0a0909] lg:scroll-mt-20"
     >
       <Container className="py-16 sm:py-20 lg:py-24">
         <div className="flex flex-col gap-16 sm:gap-20 lg:gap-24">
@@ -30,7 +30,7 @@ export function Projects() {
           </div>
 
           {/* Secondary Projects Showcase */}
-          <div className="space-y-8 sm:space-y-10 pt-8 border-t border-white/[0.06]">
+          <div className="space-y-8 sm:space-y-10 pt-8 border-t border-white/6">
             <h3 className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/40">
               Other Notable Projects
             </h3>
