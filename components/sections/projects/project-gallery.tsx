@@ -57,11 +57,11 @@ export function ProjectGallery({
               `${projectTitle ?? "Project"} screenshot ${index + 1}`;
 
             return (
-              <li key={img} className="min-w-[280px] shrink-0 lg:min-w-0">
+              <li key={img} className="min-w-70 shrink-0 lg:min-w-0">
                 <button
                   type="button"
                   onClick={() => setActiveImageIndex(index)}
-                  className="group relative block aspect-[16/10] w-full overflow-hidden rounded-2xl border border-white/5 bg-white/[0.01] shadow-md transition-all duration-300 hover:border-[#8852F7]/30 hover:shadow-[0_0_20px_rgba(135,80,247,0.15)] active:border-[#8852F7]/30 active:shadow-[0_0_20px_rgba(135,80,247,0.15)] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] cursor-pointer"
+                  className="group relative block aspect-16/10 w-full overflow-hidden rounded-2xl border border-white/5 bg-white/1 shadow-md transition-all duration-300 hover:border-[#8852F7]/30 hover:shadow-[0_0_20px_rgba(135,80,247,0.15)] active:border-[#8852F7]/30 active:shadow-[0_0_20px_rgba(135,80,247,0.15)] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] cursor-pointer"
                   aria-label={`Open ${imageAlt} in full view`}
                 >
                   <Image
