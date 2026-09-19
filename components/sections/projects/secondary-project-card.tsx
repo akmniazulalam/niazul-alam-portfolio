@@ -71,7 +71,7 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
               href={project.links.live}
               target={isExternal ? "_blank" : undefined}
               rel={isExternal ? "noopener noreferrer" : undefined}
-              className={`inline-flex min-h-9 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-primary px-4 py-2 font-poppins text-[11px] font-semibold text-white shadow-md shadow-[#FF014F]/10 transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/20 active:scale-[0.98] ${focusRing}`}
+              className={`inline-flex min-h-9 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-primary px-4 py-2 font-poppins text-[11px] font-semibold text-white shadow-md shadow-[#FF014F]/10 transition-all duration-300 hover:bg-primary/90 hover:shadow-[#FF014F]/20 active:scale-[0.98] ${focusRing}`}
             >
               <TbExternalLink className="size-3.5" />
               <span>Live Demo</span>
@@ -92,7 +92,7 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
                 href={project.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex min-h-9 cursor-pointer items-center justify-center gap-1.5 rounded-lg border border-white/10 bg-white/2 px-4 py-2 font-poppins text-[11px] font-semibold text-text/80 transition-all duration-300 hover:bg-white/[0.06] hover:border-white/20 active:scale-[0.98] ${focusRing}`}
+                className={`inline-flex min-h-9 cursor-pointer items-center justify-center gap-1.5 rounded-lg border border-white/10 bg-white/2 px-4 py-2 font-poppins text-[11px] font-semibold text-text/80 transition-all duration-300 hover:bg-white/6 hover:border-white/20 active:scale-[0.98] ${focusRing}`}
               >
                 <TbBrandGithub className="size-3.5" />
                 <span>GitHub</span>
