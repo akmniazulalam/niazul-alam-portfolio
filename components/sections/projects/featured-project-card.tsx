@@ -169,7 +169,7 @@ export function FeaturedProjectCard({
                 <li
                   key={feat}
                   tabIndex={0}
-                  className={`flex items-center gap-2 rounded-xl border border-white/3 bg-white/[0.01] px-3.5 py-2.5 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 active:bg-white/[0.03] active:border-white/10 ${focusRing}`}
+                  className={`flex items-center gap-2 rounded-xl border border-white/3 bg-white/1 px-3.5 py-2.5 transition-all duration-300 hover:bg-white/3 hover:border-white/10 active:bg-white/3 active:border-white/10 ${focusRing}`}
                 >
                   <span className="flex size-4.5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-[#ef9d7a]">
                     <TbCheck className="size-3 font-bold" aria-hidden="true" />
