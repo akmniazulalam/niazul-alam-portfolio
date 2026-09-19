@@ -125,7 +125,7 @@ export function FeaturedProjectCard({
 
                 {/* Tech Chips */}
                 <div className="space-y-2">
-                  <p className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/45 pb-1.5 border-b border-white/[0.05]">
+                  <p className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/45 pb-1.5 border-b border-white/5">
                     Technologies Used
                   </p>
                   <StaggerContainer staggerDelay={0.02} amount="some">
@@ -138,7 +138,7 @@ export function FeaturedProjectCard({
                           <StaggerItem>
                             <span
                               tabIndex={0}
-                              className={`inline-flex items-center gap-1.5 rounded-lg border border-white/5 bg-white/[0.01] px-2.5 py-1 font-poppins text-[11px] font-medium text-text/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/40 hover:bg-[#8852F7]/5 hover:text-text active:-translate-y-0.5 active:border-[#8852F7]/40 active:bg-[#8852F7]/5 active:text-text ${focusRing}`}
+                              className={`inline-flex items-center gap-1.5 rounded-lg border border-white/5 bg-white/1 px-2.5 py-1 font-poppins text-[11px] font-medium text-text/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/40 hover:bg-[#8852F7]/5 hover:text-text active:-translate-y-0.5 active:border-[#8852F7]/40 active:bg-[#8852F7]/5 active:text-text ${focusRing}`}
                             >
                               <SkillsIcon
                                 name={tech}
@@ -157,7 +157,7 @@ export function FeaturedProjectCard({
           </div>
 
           {/* ── Feature Highlights Grid ─────────────────────────────── */}
-          <div className="mt-8 pt-8 border-t border-white/[0.05] space-y-4">
+          <div className="mt-8 pt-8 border-t border-white/5 space-y-4">
             <h4 className="font-rajdhani text-xs font-bold uppercase tracking-widest text-text/45">
               Key Features & Capabilities
             </h4>
@@ -169,7 +169,7 @@ export function FeaturedProjectCard({
                 <li
                   key={feat}
                   tabIndex={0}
-                  className={`flex items-center gap-2 rounded-xl border border-white/[0.03] bg-white/[0.01] px-3.5 py-2.5 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 active:bg-white/[0.03] active:border-white/10 ${focusRing}`}
+                  className={`flex items-center gap-2 rounded-xl border border-white/3 bg-white/[0.01] px-3.5 py-2.5 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 active:bg-white/[0.03] active:border-white/10 ${focusRing}`}
                 >
                   <span className="flex size-4.5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-[#ef9d7a]">
                     <TbCheck className="size-3 font-bold" aria-hidden="true" />
