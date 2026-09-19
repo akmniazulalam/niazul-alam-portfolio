@@ -1,4 +1,5 @@
 import type { IconType } from "react-icons";
+import { BiLogoPostgresql } from "react-icons/bi";
 import {
   SiHtml5,
   SiCss,
@@ -28,6 +29,9 @@ import {
   SiCloudinary,
   SiFramer,
   SiAxios,
+  SiPrisma,
+  SiNestjs,
+  SiDocker,
 } from "react-icons/si";
 import {
   TbHierarchy,
@@ -37,7 +41,7 @@ import {
   TbSearch,
   TbDroplet,
 } from "react-icons/tb";
-import { VscVscode, VscSparkle, VscRobot } from "react-icons/vsc";
+import { VscVscode, VscSparkle, VscRobot, VscOpenai } from "react-icons/vsc";
 
 const iconMap: Record<string, IconType> = {
   html: SiHtml5,
@@ -59,8 +63,11 @@ const iconMap: Record<string, IconType> = {
   "node.js": SiNodedotjs,
   "express.js": SiExpress,
   express: SiExpress,
+  nestjs: SiNestjs,
   mongodb: SiMongodb,
   mongoose: SiMongoose,
+  postgresql: BiLogoPostgresql,
+  prisma: SiPrisma,
   axios: SiAxios,
   jwt: SiJsonwebtokens,
   "express session": TbLock,
@@ -68,10 +75,12 @@ const iconMap: Record<string, IconType> = {
   cloudinary: SiCloudinary,
   "framer motion": SiFramer,
   "rest api": TbApi,
+  openai: VscOpenai,
   vercel: SiVercel,
   render: SiRender,
   git: SiGit,
   github: SiGithub,
+  docker: SiDocker,
   "vs code": VscVscode,
   postman: SiPostman,
   figma: SiFigma,
