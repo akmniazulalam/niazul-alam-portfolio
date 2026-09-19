@@ -66,7 +66,7 @@ export function SecondaryProjectCard({ project }: SecondaryProjectCardProps) {
           </div>
 
           {/* ── Card Footer: Buttons ──────────────────────────────────── */}
-          <div className="flex items-center gap-3 pt-3 border-t border-white/[0.04]">
+          <div className="flex items-center gap-3 pt-3 border-t border-white/4">
             <a
               href={project.links.live}
               target={isExternal ? "_blank" : undefined}
