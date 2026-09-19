@@ -40,6 +40,7 @@ import {
   TbDeviceLaptop,
   TbSearch,
   TbDroplet,
+  TbExternalLink,
 } from "react-icons/tb";
 import { VscVscode, VscSparkle, VscRobot, VscOpenai } from "react-icons/vsc";
 
@@ -92,6 +93,7 @@ const iconMap: Record<string, IconType> = {
   "basic seo": TbSearch,
   shopify: SiShopify,
   liquid: TbDroplet,
+  live: TbExternalLink,
 };
 
 type SkillsIconProps = {
