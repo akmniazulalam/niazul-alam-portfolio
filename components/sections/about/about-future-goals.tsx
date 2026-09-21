@@ -19,7 +19,7 @@ export function AboutFutureGoals() {
           <div className="flex gap-4 items-start">
             <div
               aria-hidden="true"
-              className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-[#FF014F]/30 bg-[#FF014F]/10 text-xl"
+              className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-[#FF014F]/30 bg-primary/10 text-xl"
             >
               🎯
             </div>

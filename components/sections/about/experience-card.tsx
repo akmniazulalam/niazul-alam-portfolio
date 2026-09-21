@@ -23,7 +23,7 @@ export function ExperienceCard({ item, className }: ExperienceCardProps) {
     <article
       className={cn(
         "group rounded-2xl border border-white/10 bg-white/2 p-5 shadow-sm shadow-black/10 transition-all duration-300 sm:p-6",
-        "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/4 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:bg-white/[0.04] active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
+        "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/4 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:bg-white/4 active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
         className,
       )}
     >
