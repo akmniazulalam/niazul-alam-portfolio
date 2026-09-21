@@ -35,7 +35,7 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
         <StaggerItem>
           <article
             className={cn(
-              "relative ml-8 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition-all duration-300 sm:p-5",
+              "relative ml-8 rounded-xl border border-white/10 bg-white/2 p-4 transition-all duration-300 sm:p-5",
               "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:bg-white/[0.04] hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:bg-white/[0.04] active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
             )}>
             <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">

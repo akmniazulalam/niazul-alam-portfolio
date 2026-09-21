@@ -34,7 +34,7 @@ export function AboutBlock({
   return (
     <article
       className={cn(
-        "rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8",
+        "rounded-2xl border border-white/10 bg-white/3 p-5 sm:p-6 lg:p-8",
         className,
       )}
     >
