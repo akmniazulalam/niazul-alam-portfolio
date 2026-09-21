@@ -22,7 +22,7 @@ export function ContactForm() {
     >
       {state.succeeded ? (
         /* ── Success Screen ────────────────────────────────────────── */
-        <div className="flex min-h-[420px] flex-col items-center justify-center text-center py-6">
+        <div className="flex min-h-105 flex-col items-center justify-center text-center py-6">
           {/* Animated Success Icon */}
           <div className="mb-6 flex size-20 items-center justify-center rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 shadow-[0_0_30px_rgba(16,185,129,0.2)] animate-pulse">
             <TbCircleCheck className="size-10" />

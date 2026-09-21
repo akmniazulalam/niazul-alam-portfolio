@@ -51,7 +51,7 @@ export function ResumeCTA({
             aria-label={`${buttonLabel} (PDF)`}
             className={cn(
               buttonBaseStyles,
-              "bg-primary text-white shadow-lg shadow-[#FF014F]/15 hover:-translate-y-1 hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(255,1,79,0.4)] active:-translate-y-0.5 active:bg-primary/90 active:shadow-[0_0_20px_rgba(255,1,79,0.4)]",
+              "bg-primary text-white shadow-lg shadow-primary/15 hover:-translate-y-1 hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(255,1,79,0.4)] active:-translate-y-0.5 active:bg-primary/90 active:shadow-[0_0_20px_rgba(255,1,79,0.4)]",
             )}
           >
             {buttonLabel}
