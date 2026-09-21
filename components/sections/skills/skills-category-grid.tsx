@@ -15,7 +15,7 @@ export function SkillsCategoryGrid({
   return (
     <article
       className={cn(
-        "rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8 transition-all duration-300",
+        "rounded-2xl border border-white/10 bg-white/3 p-5 sm:p-6 lg:p-8 transition-all duration-300",
         "hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
         className,
       )}
@@ -37,7 +37,7 @@ export function SkillsCategoryGrid({
               <StaggerItem>
                 <span
                   tabIndex={0}
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-3.5 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text active:-translate-y-0.5 active:border-[#8852F7]/50 active:bg-[#8852F7]/10 active:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] group"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/2 px-3.5 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text active:-translate-y-0.5 active:border-[#8852F7]/50 active:bg-[#8852F7]/10 active:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0909] group"
                 >
                   <SkillsIcon
                     name={item.name}

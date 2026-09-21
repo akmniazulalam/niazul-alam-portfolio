@@ -9,7 +9,7 @@ export function SkillsFavoriteStack() {
     <ScaleIn>
       <article
         aria-labelledby="skills-stack-heading"
-        className="rounded-2xl border border-[#ef9d7a]/20 bg-gradient-to-r from-[#ef9d7a]/5 to-transparent p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#ef9d7a]/35 hover:shadow-[0_0_30px_rgba(239,157,122,0.15)] active:-translate-y-1 active:border-[#ef9d7a]/35 active:shadow-[0_0_30px_rgba(239,157,122,0.15)]"
+        className="rounded-2xl border border-[#ef9d7a]/20 bg-linear-to-r from-[#ef9d7a]/5 to-transparent p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#ef9d7a]/35 hover:shadow-[0_0_30px_rgba(239,157,122,0.15)] active:-translate-y-1 active:border-[#ef9d7a]/35 active:shadow-[0_0_30px_rgba(239,157,122,0.15)]"
       >
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
           <div className="flex shrink-0 items-center gap-3">
