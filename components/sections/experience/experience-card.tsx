@@ -38,7 +38,7 @@ export function ExperienceCard() {
       {/* Timeline line */}
       <div
         aria-hidden="true"
-        className="absolute left-4 sm:left-6 md:left-8 top-8 bottom-0 w-0.5 -translate-x-1/2 bg-gradient-to-b from-[#8852F7] via-[#8852F7]/20 to-transparent"
+        className="absolute left-4 sm:left-6 md:left-8 top-8 bottom-0 w-0.5 -translate-x-1/2 bg-linear-to-b from-[#8852F7] via-[#8852F7]/20 to-transparent"
       />
       
       {/* Timeline node */}
@@ -87,7 +87,7 @@ export function ExperienceCard() {
 
                 {/* Tech Stack used */}
                 <div className="space-y-3">
-                  <h4 className="font-rajdhani text-base font-bold text-text uppercase tracking-wider pb-2 border-b border-white/[0.06]">
+                  <h4 className="font-rajdhani text-base font-bold text-text uppercase tracking-wider pb-2 border-b border-white/6">
                     Technologies Used
                   </h4>
                   <StaggerContainer staggerDelay={0.03} amount="some">
@@ -115,7 +115,7 @@ export function ExperienceCard() {
 
               {/* ── Right Column: Responsibilities ───────────────────────── */}
               <div className="lg:col-span-7 flex flex-col gap-4">
-                <h4 className="font-rajdhani text-lg font-bold text-text uppercase tracking-wider pb-2 border-b border-white/[0.06]">
+                <h4 className="font-rajdhani text-lg font-bold text-text uppercase tracking-wider pb-2 border-b border-white/6">
                   Responsibilities
                 </h4>
                 
@@ -126,7 +126,7 @@ export function ExperienceCard() {
                         <StaggerItem>
                           <div
                             tabIndex={0}
-                            className="group flex items-start gap-3.5 rounded-xl bg-white/1 border border-white/[0.03] px-4 py-3 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 active:bg-white/[0.03] active:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+                            className="group flex items-start gap-3.5 rounded-xl bg-white/1 border border-white/3 px-4 py-3 transition-all duration-300 hover:bg-white/3 hover:border-white/10 active:bg-white/3 active:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
                           >
                             <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-xs text-[#ef9d7a] transition-all duration-300 group-hover:bg-[#ef9d7a]/20 group-active:bg-[#ef9d7a]/20 group-focus-visible:bg-[#ef9d7a]/20">
                               <TbCheck aria-hidden="true" className="size-3" />
