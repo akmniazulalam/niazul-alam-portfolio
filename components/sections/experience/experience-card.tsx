@@ -50,7 +50,7 @@ export function ExperienceCard() {
       <FadeRight>
         <article
           aria-labelledby="experience-job-heading"
-          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
+          className="rounded-2xl border border-white/10 bg-white/3 p-5 sm:p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#8852F7]/40 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:-translate-y-1 active:border-[#8852F7]/40 active:shadow-[0_0_30px_rgba(135,80,247,0.2)]"
         >
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12">
               
@@ -73,12 +73,12 @@ export function ExperienceCard() {
 
                 {/* Metadata Chips */}
                 <ul className="flex flex-wrap gap-2.5 font-poppins text-xs font-semibold" aria-label="Employment details">
-                  <li className="inline-flex items-center gap-2 rounded-xl bg-white/[0.03] border border-white/5 px-3.5 py-1.5 text-text/80">
+                  <li className="inline-flex items-center gap-2 rounded-xl bg-white/3 border border-white/5 px-3.5 py-1.5 text-text/80">
                     <TbCalendar aria-hidden="true" className="size-4 shrink-0 text-[#ef9d7a]" />
                     <span className="sr-only">Duration: </span>
                     <span>{experience.duration}</span>
                   </li>
-                  <li className="inline-flex items-center gap-2 rounded-xl bg-white/[0.03] border border-white/5 px-3.5 py-1.5 text-text/80">
+                  <li className="inline-flex items-center gap-2 rounded-xl bg-white/3 border border-white/5 px-3.5 py-1.5 text-text/80">
                     <TbMapPin aria-hidden="true" className="size-4 shrink-0 text-[#ef9d7a]" />
                     <span className="sr-only">Location: </span>
                     <span>{experience.location}</span>
@@ -97,7 +97,7 @@ export function ExperienceCard() {
                           <StaggerItem>
                             <span
                               tabIndex={0}
-                              className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 bg-white/[0.02] px-3 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text active:-translate-y-0.5 active:border-[#8852F7]/50 active:bg-[#8852F7]/10 active:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] group"
+                              className="inline-flex items-center gap-1.5 rounded-xl border border-white/10 bg-white/2 px-3 py-1.5 font-poppins text-xs font-medium text-text/80 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#8852F7]/50 hover:bg-[#8852F7]/10 hover:text-text active:-translate-y-0.5 active:border-[#8852F7]/50 active:bg-[#8852F7]/10 active:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715] group"
                             >
                               <SkillsIcon
                                 name={tech}
@@ -126,7 +126,7 @@ export function ExperienceCard() {
                         <StaggerItem>
                           <div
                             tabIndex={0}
-                            className="group flex items-start gap-3.5 rounded-xl bg-white/[0.01] border border-white/[0.03] px-4 py-3 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 active:bg-white/[0.03] active:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
+                            className="group flex items-start gap-3.5 rounded-xl bg-white/1 border border-white/[0.03] px-4 py-3 transition-all duration-300 hover:bg-white/[0.03] hover:border-white/10 active:bg-white/[0.03] active:border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0715]"
                           >
                             <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-[#ef9d7a]/10 text-xs text-[#ef9d7a] transition-all duration-300 group-hover:bg-[#ef9d7a]/20 group-active:bg-[#ef9d7a]/20 group-focus-visible:bg-[#ef9d7a]/20">
                               <TbCheck aria-hidden="true" className="size-3" />
