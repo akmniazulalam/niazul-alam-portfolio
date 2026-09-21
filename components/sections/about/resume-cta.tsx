@@ -27,13 +27,13 @@ export function ResumeCTA({
   return (
     <article
       className={cn(
-        "relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.03] to-[#FF014F]/[0.02] p-6 sm:p-8 lg:p-10 shadow-xl shadow-black/10 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:border-primary/30 active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
+        "relative overflow-hidden rounded-2xl border border-white/10 bg-linear-to-r from-white/3 to-primary/2 p-6 sm:p-8 lg:p-10 shadow-xl shadow-black/10 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_rgba(135,80,247,0.2)] active:border-primary/30 active:shadow-[0_0_30px_rgba(135,80,247,0.2)]",
         className,
       )}
     >
       <div
         aria-hidden="true"
-        className="absolute -right-16 -top-16 size-32 rounded-full bg-[#FF014F]/10 blur-2xl pointer-events-none"
+        className="absolute -right-16 -top-16 size-32 rounded-full bg-primary/10 blur-2xl pointer-events-none"
       />
 
       <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
