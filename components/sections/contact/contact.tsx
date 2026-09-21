@@ -7,7 +7,7 @@ function ContactFormSkeleton() {
   return (
     <div
       aria-hidden="true"
-      className="flex min-h-[520px] w-full animate-pulse flex-col justify-between gap-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_8px_40px_rgba(0,0,0,0.3)] sm:p-8 lg:p-10"
+      className="flex min-h-130 w-full animate-pulse flex-col justify-between gap-6 rounded-2xl border border-white/10 bg-white/3 p-6 shadow-[0_8px_40px_rgba(0,0,0,0.3)] sm:p-8 lg:p-10"
     >
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="h-16 rounded-xl bg-white/5" />

@@ -78,7 +78,7 @@ export function ContactInfo() {
                 tabIndex={0}
                 className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/2 p-5 sm:p-6 transition-all duration-300 hover:border-[#8852F7]/20 hover:bg-white/3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28]"
               >
-                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-all duration-300 group-hover:bg-[#8852F7]/[0.15] group-hover:text-[#8852F7]">
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#8852F7]/10 text-[#8852F7] transition-all duration-300 group-hover:bg-[#8852F7]/15 group-hover:text-[#8852F7]">
                   <TbMapPin className="size-5" aria-hidden="true" />
                 </div>
                 <div className="min-w-0 space-y-1.5">
