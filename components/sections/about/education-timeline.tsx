@@ -20,7 +20,7 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
       <div
         aria-hidden="true"
         className={cn(
-          "absolute left-[0.9375rem] top-6 z-10 size-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0a0909] transition-colors duration-300",
+          "absolute left-3.75 top-6 z-10 size-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#8852F7] bg-[#0a0909] transition-colors duration-300",
           "group-hover:border-[#ef9d7a] group-active:border-[#ef9d7a]",
         )}
       />
@@ -28,7 +28,7 @@ function EducationTimelineItem({ item, isLast }: EducationTimelineItemProps) {
       {!isLast && (
         <div
           aria-hidden="true"
-          className="absolute left-[0.9375rem] top-6 bottom-0 w-px -translate-x-1/2 bg-white/10"
+          className="absolute left-3.75 top-6 bottom-0 w-px -translate-x-1/2 bg-white/10"
         />
       )}
       <FadeRight>
