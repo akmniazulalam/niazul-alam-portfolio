@@ -33,7 +33,7 @@ export function HeroTypedRole() {
       <span className="sr-only">A {HERO_TYPED_ROLES.join(", ")}</span>
       <span aria-hidden="true" className="inline-flex items-center min-w-[17ch] typed">
         <span className="text-text mr-2">A</span>
-        <span ref={elRef} className="text-[#FF014F]">
+        <span ref={elRef} className="text-primary">
           {HERO_TYPED_ROLES[0]}
         </span>
       </span>
