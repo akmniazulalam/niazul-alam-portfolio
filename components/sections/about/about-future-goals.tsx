@@ -13,13 +13,13 @@ export function AboutFutureGoals() {
       <AboutBlock
         title={futureGoals.title}
         headingId="about-goals-heading"
-        className="border-[#FF014F]/20 bg-linear-to-br from-[#FF014F]/5 to-transparent h-full flex flex-col"
+        className="border-primary/20 bg-linear-to-br from-primary/5 to-transparent h-full flex flex-col"
       >
         <div className="flex-1 flex flex-col justify-center">
           <div className="flex gap-4 items-start">
             <div
               aria-hidden="true"
-              className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-[#FF014F]/30 bg-primary/10 text-xl"
+              className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-primary/30 bg-primary/10 text-xl"
             >
               🎯
             </div>
