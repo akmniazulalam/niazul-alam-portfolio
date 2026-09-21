@@ -45,7 +45,7 @@ export function ContactForm() {
           <button
             type="button"
             onClick={reset}
-            className="mt-8 inline-flex cursor-pointer items-center gap-2 rounded-xl border border-white/10 bg-white/3 px-6 py-3 font-poppins text-sm font-semibold text-text transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28]"
+            className="mt-8 inline-flex cursor-pointer items-center gap-2 rounded-xl border border-white/10 bg-white/3 px-6 py-3 font-poppins text-sm font-semibold text-text transition-all duration-300 hover:border-white/20 hover:bg-white/6 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28]"
           >
             <TbRefresh className="size-4" />
             <span>Send Another Message</span>
@@ -131,7 +131,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="inline-flex min-h-12 w-full cursor-pointer items-center justify-center rounded-xl bg-primary px-8 py-4 font-poppins text-sm font-semibold text-white shadow-lg shadow-[#FF014F]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/30 active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0 disabled:hover:bg-[#FF014F]"
+            className="inline-flex min-h-12 w-full cursor-pointer items-center justify-center rounded-xl bg-primary px-8 py-4 font-poppins text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-primary/30 active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8852F7] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1c0d28] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0 disabled:hover:bg-[#FF014F]"
           >
             {state.submitting ? "Sending..." : "Send Message"}
           </button>
