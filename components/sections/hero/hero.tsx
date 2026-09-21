@@ -17,7 +17,7 @@ export function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="min-h-screen scroll-mt-16 bg-gradient-to-b from-[#0f0715] to-[#1c0d28] lg:scroll-mt-20"
+      className="min-h-screen scroll-mt-16 bg-linear-to-b from-[#0f0715] to-[#1c0d28] lg:scroll-mt-20"
 
     >
       <Container className="flex min-h-screen items-center py-16 sm:py-20 lg:py-24">
@@ -46,7 +46,7 @@ export function Hero() {
               <Link
                 href={HERO_PROJECTS_HREF}
                 className={cn(
-                  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#d60047] px-7 py-3 font-poppins text-sm font-semibold text-white shadow-lg shadow-[#FF014F]/20 transition-all duration-300 hover:bg-[#FF014F]/90 hover:shadow-[#FF014F]/30 active:bg-[#FF014F]/90 active:shadow-[#FF014F]/30 active:scale-[0.98]",
+                  "inline-flex min-h-11 items-center justify-center rounded-full bg-[#d60047] px-7 py-3 font-poppins text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/30 active:bg-primary/90 active:shadow-primary/30 active:scale-[0.98]",
                   focusRingStyles,
                 )}
               >
