@@ -26,7 +26,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/[0.06] bg-[#050709] py-12 sm:py-16">
+    <footer className="border-t border-white/6 bg-[#050709] py-12 sm:py-16">
       <Container>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8 lg:gap-12">
           {/* ── Column 1: Brand & Tagline (FadeUp) ────────────────────── */}
