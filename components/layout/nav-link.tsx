@@ -26,7 +26,7 @@ export function NavLinkItem({
         onClick={onNavigate}
         className={cn(
           linkBaseStyles,
-          isActive ? "text-[#FF014F]" : "text-muted hover:text-inherit active:text-inherit",
+          isActive ? "text-primary" : "text-muted hover:text-inherit active:text-inherit",
           className,
         )}
         aria-current={isActive ? "true" : undefined}>
