@@ -124,7 +124,7 @@ export function MobileMenu({
                     "w-full justify-start px-4 py-3 text-base rounded-xl transition-all [&_span]:hidden",
                     isLinkActive(link)
                       ? "bg-primary/10 text-primary font-bold"
-                      : "text-muted hover:text-text hover:bg-white/2 active:text-text active:bg-white/[0.04]"
+                      : "text-muted hover:text-text hover:bg-white/2 active:text-text active:bg-white/4"
                   )}
                 />
               ))}
