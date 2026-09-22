@@ -123,7 +123,7 @@ export function MobileMenu({
                   className={cn(
                     "w-full justify-start px-4 py-3 text-base rounded-xl transition-all [&_span]:hidden",
                     isLinkActive(link)
-                      ? "bg-[#FF014F]/10 text-[#FF014F] font-bold"
+                      ? "bg-primary/10 text-[#FF014F] font-bold"
                       : "text-muted hover:text-text hover:bg-white/[0.02] active:text-text active:bg-white/[0.04]"
                   )}
                 />
