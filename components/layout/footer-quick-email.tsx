@@ -84,7 +84,7 @@ export function FooterQuickEmail() {
 
           {/* Inline Validation Message */}
           {error && (
-            <p id="quick-email-error" className="font-poppins text-xs text-[#FF014F]">
+            <p id="quick-email-error" className="font-poppins text-xs text-primary">
               {error}
             </p>
           )}
