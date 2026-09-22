@@ -34,7 +34,7 @@ export function NavLinkItem({
         <span
           aria-hidden="true"
           className={cn(
-            "absolute inset-x-3 -bottom-0.5 h-0.5 origin-left rounded-full bg-[#FF014F] transition-transform duration-300",
+            "absolute inset-x-3 -bottom-0.5 h-0.5 origin-left rounded-full bg-primary transition-transform duration-300",
             isActive ? "scale-x-100" : "scale-x-0",
           )}
         />
