@@ -132,7 +132,7 @@ export function Footer() {
         <FadeUp
           delay={0.2}
           amount="some"
-          className="mt-12 border-t border-white/[0.06] pt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between font-poppins text-xs text-text/45">
+          className="mt-12 border-t border-white/6 pt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between font-poppins text-xs text-text/45">
           <p>© {currentYear} Niazul Alam. All rights reserved.</p>
           <p>Crafted with Next.js, TypeScript & Tailwind CSS.</p>
         </FadeUp>
