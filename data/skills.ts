@@ -70,8 +70,13 @@ export const SKILLS_DATA = {
     },
     {
       id: "deployment",
-      title: "Deployment",
-      items: [{ name: "Vercel" }, { name: "Render" }],
+      title: "DevOps & Deployment",
+      items: [
+        { name: "Docker" },
+        { name: "Docker Compose" },
+        { name: "Vercel" },
+        { name: "Render" },
+      ],
     },
     {
       id: "tools",
