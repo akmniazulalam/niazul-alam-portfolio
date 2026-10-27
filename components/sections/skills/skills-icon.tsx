@@ -1,5 +1,6 @@
 import type { IconType } from "react-icons";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { LuLayers } from "react-icons/lu";
 import {
   SiHtml5,
   SiCss,
@@ -82,6 +83,8 @@ const iconMap: Record<string, IconType> = {
   git: SiGit,
   github: SiGithub,
   docker: SiDocker,
+  "docker compose": LuLayers,
+  "docker-compose": LuLayers,
   "vs code": VscVscode,
   postman: SiPostman,
   figma: SiFigma,
